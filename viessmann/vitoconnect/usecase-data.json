@@ -1,0 +1,127 @@
+{
+  "data": [
+    {
+      "header": [
+        {
+          "protocolId": "ee1.0"
+        }
+      ]
+    },
+    {
+      "payload": {
+        "datagram": [
+          {
+            "header": [
+              {
+                "specificationVersion": "1.2.0"
+              },
+              {
+                "addressSource": [
+                  {
+                    "device": "d:_i:21381_Heatbox2-xxxxxx"
+                  },
+                  {
+                    "entity": [
+                      0
+                    ]
+                  },
+                  {
+                    "feature": 0
+                  }
+                ]
+              },
+              {
+                "addressDestination": [
+                  {
+                    "device": "d:_i:Vitobridge_VitobridgeSidecar-123456789"
+                  },
+                  {
+                    "entity": [
+                      0
+                    ]
+                  },
+                  {
+                    "feature": 0
+                  }
+                ]
+              },
+              {
+                "msgCounter": 59
+              },
+              {
+                "msgCounterReference": 8
+              },
+              {
+                "cmdClassifier": "reply"
+              }
+            ]
+          },
+          {
+            "payload": [
+              {
+                "cmd": [
+                  [
+                    {
+                      "nodeManagementUseCaseData": [
+                        {
+                          "useCaseInformation": [
+                            [
+                              {
+                                "address": [
+                                  {
+                                    "device": "d:_i:21381_Heatbox2-xxxxxx"
+                                  }
+                                ]
+                              },
+                              {
+                                "actor": "HeatPump"
+                              },
+                              {
+                                "useCaseSupport": [
+                                  [
+                                    {
+                                      "useCaseName": "monitoringAndControlOfSmartGridReadyConditions"
+                                    },
+                                    {
+                                      "useCaseVersion": "1.0.0"
+                                    },
+                                    {
+                                      "scenarioSupport": [
+                                        1,
+                                        2
+                                      ]
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "useCaseName": "monitoringOfPowerConsumption"
+                                    },
+                                    {
+                                      "useCaseVersion": "1.0.0 draft3"
+                                    },
+                                    {
+                                      "scenarioSupport": [
+                                        1,
+                                        2,
+                                        3,
+                                        4
+                                      ]
+                                    }
+                                  ]
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

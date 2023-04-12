@@ -1,0 +1,329 @@
+{
+  "data": [
+    {
+      "header": [
+        {
+          "protocolId": "ee1.0"
+        }
+      ]
+    },
+    {
+      "payload": {
+        "datagram": [
+          {
+            "header": [
+              {
+                "specificationVersion": "1.1.1"
+              },
+              {
+                "addressSource": [
+                  {
+                    "device": "d:_i:36013_3002857654"
+                  },
+                  {
+                    "entity": [
+                      0
+                    ]
+                  },
+                  {
+                    "feature": 0
+                  }
+                ]
+              },
+              {
+                "addressDestination": [
+                  {
+                    "device": "d:_i:Demo_EVSE-234567890"
+                  },
+                  {
+                    "entity": [
+                      0
+                    ]
+                  },
+                  {
+                    "feature": 0
+                  }
+                ]
+              },
+              {
+                "msgCounter": 6
+              },
+              {
+                "msgCounterReference": 1
+              },
+              {
+                "cmdClassifier": "reply"
+              }
+            ]
+          },
+          {
+            "payload": [
+              {
+                "cmd": [
+                  [
+                    {
+                      "nodeManagementDetailedDiscoveryData": [
+                        {
+                          "specificationVersionList": [
+                            {
+                              "specificationVersion": [
+                                "1.1.0"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "deviceInformation": [
+                            {
+                              "description": [
+                                {
+                                  "deviceAddress": [
+                                    {
+                                      "device": "d:_i:36013_3002857654"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "networkFeatureSet": "smart"
+                                },
+                                {
+                                  "lastStateChange": "added"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "entityInformation": [
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "entityAddress": [
+                                      {
+                                        "entity": [
+                                          0
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "entityType": "DeviceInformation"
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "entityAddress": [
+                                      {
+                                        "entity": [
+                                          1
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "entityType": "Generic"
+                                  },
+                                  {
+                                    "description": "SmartEnergyManagementPs client entity"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "featureInformation": [
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "featureAddress": [
+                                      {
+                                        "entity": [
+                                          0
+                                        ]
+                                      },
+                                      {
+                                        "feature": 0
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "featureType": "NodeManagement"
+                                  },
+                                  {
+                                    "role": "special"
+                                  },
+                                  {
+                                    "supportedFunction": [
+                                      [
+                                        {
+                                          "function": "nodeManagementDetailedDiscoveryData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementSubscriptionRequestCall"
+                                        },
+                                        {
+                                          "possibleOperations": []
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementSubscriptionDeleteCall"
+                                        },
+                                        {
+                                          "possibleOperations": []
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementBindingRequestCall"
+                                        },
+                                        {
+                                          "possibleOperations": []
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementBindingDeleteCall"
+                                        },
+                                        {
+                                          "possibleOperations": []
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementSubscriptionData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementBindingData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementDestinationListData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "featureAddress": [
+                                      {
+                                        "entity": [
+                                          0
+                                        ]
+                                      },
+                                      {
+                                        "feature": 1
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "featureType": "DeviceClassification"
+                                  },
+                                  {
+                                    "role": "server"
+                                  },
+                                  {
+                                    "supportedFunction": [
+                                      [
+                                        {
+                                          "function": "deviceClassificationManufacturerData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "featureAddress": [
+                                      {
+                                        "entity": [
+                                          1
+                                        ]
+                                      },
+                                      {
+                                        "feature": 1
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "featureType": "Generic"
+                                  },
+                                  {
+                                    "role": "client"
+                                  },
+                                  {
+                                    "description": "SmartEnergyManagementPs client feature"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
