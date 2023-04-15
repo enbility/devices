@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "EEBUS usecases schema",
+  "$ref": "#/definitions/root",
+  "definitions": {
+    "root": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "usecases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/UseCases"
+          }
+        }
+      }
+    },
+    "UseCases": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "The use case title as defined in the specification"
+        },
+        "short": {
+          "type": "string",
+          "description": "The short-name as defined in the use case specification chapter 1 'Scope of the document'"
+        },
+        "name": {
+          "type": "string",
+          "description": "The string content for the Element 'nodeManagementUseCaseData.useCaseInformation.useCaseSupport.useCaseName' within Use Case Discovery as defined in the use case specification chapter 3.1.2 'Use Case Discovery rules'"
+        },
+        "category": {
+          "type": "string",
+          "description": "The category of use cases it (mostly) belongs to",
+          "enum": ["E-Mobility", "Grid", "Inverter", "HVAC"]
+        },
+        "note": {
+          "type": "string",
+          "description": "Additional relevant information"
+        },
+        "scenarios": {
+          "$ref": "#/definitions/Scenarios"
+        }
+      },
+      "required": ["title", "short", "name", "category"],
+      "title": "UseCases"
+    },
+    "Scenarios": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Scenario"
+      },
+      "description": "The possible scenarios this use case supports"
+    },
+    "Scenario": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer",
+          "description": "The id of the scenario"
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of the scenario as defined in the use case specification"
+        } 
+      },
+      "required": ["id", "title"]
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "EEBUS devices schema",
+  "$ref": "#/definitions/root",
+  "definitions": {
+    "root": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "devices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Product"
+          }
+        }
+      }
+    },
+    "Product": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "product": {
+          "type": "string"
+        },
+        "updated": {
+          "type": "string",
+          "description": "The date DD.MM.YYYY the provided data was gathered"
+        },
+        "urls": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "discovery": {
+              "type": "string",
+              "description": "The URL of the NodeManagementDetailedDiscoveryData response content"
+            },
+            "usecase": {
+              "type": "string",
+              "description": "The URL of the NodeManagementUseCaseData response content"
+            }
+          }
+        },
+        "versions": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "firmware": {
+              "type": "string",
+              "description": "The version of the devices firmware or service that was used to gather the data"
+            },
+            "ship": {
+              "type": "string",
+              "description": "The SHIP version that is supported"
+            },
+            "spine": {
+              "type": "string",
+              "description": "The SPINE version that is supported"
+            }
+          }
+        },
+        "devicetype": {
+          "type": "string",
+          "description": "The 'devicetype' that is being reported in 'NodeManagementDetailedDiscoveryData'"
+        },
+        "usecases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The usecase 'name' value of the supported use case defined in 'usecases.yaml'"
+              },
+              "version": {
+                "type": "string",
+                "description": "The version of the use case reported as being supported"
+              },
+              "invalid": {
+                "type": "boolean",
+                "description": "Set to 'false' if the use case is reported as being supported but is not implemented"
+              },
+              "scenarios": {
+                "type": "array",
+                "description": "A list of the supported scenario 'id' values of the use case",
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "invalidscenarios": {
+                "type": "array",
+                "description": "A list of the scenario 'id' values of the use case reported as supported, but are actually not implemented",
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "notes": {
+                "type": "string",
+                "description": "Additional notes, findings about the use case and its scenarios"
+              }
+            },
+            "required": ["name", "version", "scenarios"]
+          }
+        },
+        "notes": {
+          "type": "string",
+          "description": " Additional notes, findings about the device"
+        }
+      },
+      "required": ["product", "updated", "urls", "versions", "devicetype"]
+    }
+  }
+}

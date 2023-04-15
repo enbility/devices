@@ -1,0 +1,6 @@
+{
+  "yaml.schemas": {
+    "./devices-schema.json": "devices.yaml",
+    "./usecases-schema.json": "usecases.yaml"
+  }
+}
