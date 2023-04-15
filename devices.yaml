@@ -99,9 +99,11 @@ devices:
       - name: measurementOfElectricityDuringEvCharging
         version: "1.0.1"
         scenarios: [1, 2, 3]
+        invalidscenarios: [2, 3]
         notes: |
           The Elli Charger Connect does not contain a meter. For that model the provided
-          measurements are only assumptions.
+          measurements are only assumptions. Also only the scenario "Measure EV charging current"
+          is really supported. 
       - name: overloadProtectionByEvChargingCurrentCurtailment
         version: "1.0.1"
         scenarios: [1, 2, 3]
