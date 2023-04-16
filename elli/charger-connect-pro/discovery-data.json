@@ -33,7 +33,7 @@
               {
                 "addressDestination": [
                   {
-                    "device": "d:_i:EVCC_HEMS-EVCC-xxxxxxxxxxxxxxxx"
+                    "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
                   },
                   {
                     "entity": [
@@ -46,10 +46,13 @@
                 ]
               },
               {
-                "msgCounter": 44495
+                "msgCounter": 3
               },
               {
-                "cmdClassifier": "notify"
+                "msgCounterReference": 1
+              },
+              {
+                "cmdClassifier": "reply"
               }
             ]
           },
@@ -59,23 +62,16 @@
                 "cmd": [
                   [
                     {
-                      "function": "nodeManagementDetailedDiscoveryData"
-                    },
-                    {
-                      "filter": [
-                        [
-                          {
-                            "cmdControl": [
-                              {
-                                "partial": []
-                              }
-                            ]
-                          }
-                        ]
-                      ]
-                    },
-                    {
                       "nodeManagementDetailedDiscoveryData": [
+                        {
+                          "specificationVersionList": [
+                            {
+                              "specificationVersion": [
+                                "1.3.0"
+                              ]
+                            }
+                          ]
+                        },
                         {
                           "deviceInformation": [
                             {
@@ -86,6 +82,15 @@
                                       "device": "d:_i:47859_Elli-Wallbox-xxxxxxxxxx"
                                     }
                                   ]
+                                },
+                                {
+                                  "deviceType": "Generic"
+                                },
+                                {
+                                  "networkFeatureSet": "smart"
+                                },
+                                {
+                                  "lastStateChange": "added"
                                 }
                               ]
                             }
@@ -100,25 +105,386 @@
                                     "entityAddress": [
                                       {
                                         "entity": [
-                                          1,
+                                          0
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "entityType": "DeviceInformation"
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "entityAddress": [
+                                      {
+                                        "entity": [
                                           1
                                         ]
                                       }
                                     ]
                                   },
                                   {
-                                    "entityType": "EV"
-                                  },
-                                  {
-                                    "lastStateChange": "added"
+                                    "entityType": "EVSE"
                                   }
                                 ]
                               }
-                            ]
+                            ],
+                            {
+                              "description": [
+                                {
+                                  "entityAddress": [
+                                    {
+                                      "entity": [
+                                        1,
+                                        1
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "entityType": "EV"
+                                }
+                              ]
+                            }
                           ]
                         },
                         {
                           "featureInformation": [
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "featureAddress": [
+                                      {
+                                        "entity": [
+                                          0
+                                        ]
+                                      },
+                                      {
+                                        "feature": 0
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "featureType": "NodeManagement"
+                                  },
+                                  {
+                                    "role": "special"
+                                  },
+                                  {
+                                    "supportedFunction": [
+                                      [
+                                        {
+                                          "function": "nodeManagementBindingData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementBindingDeleteCall"
+                                        },
+                                        {
+                                          "possibleOperations": []
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementBindingRequestCall"
+                                        },
+                                        {
+                                          "possibleOperations": []
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementDetailedDiscoveryData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementSubscriptionData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementSubscriptionDeleteCall"
+                                        },
+                                        {
+                                          "possibleOperations": []
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementSubscriptionRequestCall"
+                                        },
+                                        {
+                                          "possibleOperations": []
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "nodeManagementUseCaseData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "featureAddress": [
+                                      {
+                                        "entity": [
+                                          0
+                                        ]
+                                      },
+                                      {
+                                        "feature": 1
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "featureType": "DeviceClassification"
+                                  },
+                                  {
+                                    "role": "server"
+                                  },
+                                  {
+                                    "supportedFunction": [
+                                      [
+                                        {
+                                          "function": "deviceClassificationManufacturerData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "featureAddress": [
+                                      {
+                                        "entity": [
+                                          1
+                                        ]
+                                      },
+                                      {
+                                        "feature": 4
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "featureType": "DeviceClassification"
+                                  },
+                                  {
+                                    "role": "server"
+                                  },
+                                  {
+                                    "supportedFunction": [
+                                      [
+                                        {
+                                          "function": "deviceClassificationManufacturerData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": [
+                                                {
+                                                  "partial": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "featureAddress": [
+                                      {
+                                        "entity": [
+                                          1
+                                        ]
+                                      },
+                                      {
+                                        "feature": 29
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "featureType": "Bill"
+                                  },
+                                  {
+                                    "role": "server"
+                                  },
+                                  {
+                                    "supportedFunction": [
+                                      [
+                                        {
+                                          "function": "billConstraintsListData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": [
+                                                {
+                                                  "partial": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "billDescriptionListData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": [
+                                                {
+                                                  "partial": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "billListData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": [
+                                                {
+                                                  "partial": []
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "write": [
+                                                {
+                                                  "partial": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            [
+                              {
+                                "description": [
+                                  {
+                                    "featureAddress": [
+                                      {
+                                        "entity": [
+                                          1
+                                        ]
+                                      },
+                                      {
+                                        "feature": 1000
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "featureType": "DeviceDiagnosis"
+                                  },
+                                  {
+                                    "role": "server"
+                                  },
+                                  {
+                                    "supportedFunction": [
+                                      [
+                                        {
+                                          "function": "deviceDiagnosisHeartbeatData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      [
+                                        {
+                                          "function": "deviceDiagnosisStateData"
+                                        },
+                                        {
+                                          "possibleOperations": [
+                                            {
+                                              "read": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    ]
+                                  },
+                                  {
+                                    "description": "Device diagnosis server feature"
+                                  }
+                                ]
+                              }
+                            ],
                             [
                               {
                                 "description": [
