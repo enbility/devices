@@ -8,6 +8,9 @@ usecases:
         title: EVSE sends manufacturer information
       - id: 2
         title: EVSE sends error state
+    actors:
+      - EVSE
+      - CEM
   - title: EV Commissioning and Configuration
     short: EVCC
     name: evCommissioningAndConfiguration
@@ -29,6 +32,9 @@ usecases:
         title: EV sleep mode
       - id: 8
         title: EV disconnected
+    actors:
+      - EV
+      - CEM
   - title: EV Charging Electricity Measurement
     short: EVCEM
     name: measurementOfElectricityDuringEvCharging
@@ -40,6 +46,9 @@ usecases:
         title: Measure EV charging power
       - id: 3
         title: Measure EV charging energy
+    actors:
+      - EV
+      - CEM
   - title: Overload Protection by EV Charging Current Curtailment
     short: OPEV
     name: overloadProtectionByEvChargingCurrentCurtailment
@@ -51,6 +60,10 @@ usecases:
         title: EV checks Energy Guard availability
       - id: 3
         title: Energy Guard sends error state
+    actors:
+      - EV
+      - CEM
+      - EnergyGuard
   - title: Optimization of Self Consumption During EV Charging
     short: OSCEV
     name: optimizationOfSelfConsumptionDuringEvCharging
@@ -62,6 +75,9 @@ usecases:
         title: EV checks CEM availability
       - id: 3
         title: CEM sends error state
+    actors:
+      - EV
+      - CEM
   - title: Coordinated EV Charging
     short: CEVC
     name: coordinatedEvCharging
@@ -83,6 +99,11 @@ usecases:
         title: Energy Guard error state
       - id: 8
         title: Energy Broker error state
+    actors:
+      - EV
+      - CEM
+      - EnergyGuard
+      - EnergyBroker
   - title: EV State of Charge
     short: EVSOC
     name: evStateOfCharge
@@ -96,6 +117,9 @@ usecases:
         title: Monitor EV state of health
       - id: 4
         title: Monitor EV actual travel range
+    actors:
+      - EV
+      - MonitoringAppliance
   - title: EV Charging Summary
     short: EVCS
     category: E-Mobility
@@ -103,6 +127,10 @@ usecases:
     scenarios:
       - id: 1
         title: Energy Broker sends Charging Session Summary to EVSE
+    actors:
+      - EVSE
+      - CEM
+      - EnergyBroker
 
   - title: Limitation of Power Consumption
     short: LPC
@@ -117,6 +145,9 @@ usecases:
         title: Heartbeat
       - id: 4
         title: Constraints
+    actors:
+      - EnergyGuard
+      - ControllableSystem
   - title: Limitation of Power Production
     short: LPP
     name: limitationOfPowerProduction
@@ -130,6 +161,9 @@ usecases:
         title: Heartbeat
       - id: 4
         title: Constraints
+    actors:
+      - EnergyGuard
+      - ControllableSystem
   - title: Monitoring of Grid Connection Point
     short: MGCP
     name: monitoringOfGridConnectionPoint
@@ -149,6 +183,9 @@ usecases:
         title: Monitor voltage phase details
       - id: 7
         title: Monitor frequency
+    actors:
+      - MonitoringAppliance
+      - GridConnectionPoint
   - title: Monitoring of Power Consumption
     short: MPC
     name: monitoringOfPowerConsumption
@@ -164,6 +201,9 @@ usecases:
         title: Monitor voltage
       - id: 5
         title: Monitor frequrency
+    actors:
+      - MonitoringAppliance
+      - MonitoredUnit
 
   - title: Control of Battery
     short: COB
@@ -180,6 +220,9 @@ usecases:
         title: Failsafe values
       - id: 5
         title: Heartbeat
+    actors:
+      - CEM
+      - Inverter
   - title: Monitoring of Battery
     short: MOB
     name: monitoringOfBattery
@@ -203,6 +246,9 @@ usecases:
         title: Monitor Battery capabilities
       - id: 9
         title: Monitor Battery internal data
+    actors:
+      - MonitoringAppliance
+      - Battery
   - title: Monitoring of Inverter
     short: MOI
     name: monitoringOfInverter
@@ -226,6 +272,9 @@ usecases:
         title: Monitor Inverter capabilities
       - id: 9
         title: Monitor Inverter internal data
+    actors:
+      - MonitoringAppliance
+      - Inverter
   - title: Monitoring of PV String
     short: MPS
     name: monitoringOfPvString
@@ -243,6 +292,9 @@ usecases:
         title: Monitor PV String additional details
       - id: 6
         title: Monitor PV String internal data
+    actors:
+      - MonitoringAppliance
+      - PVString
   - title: Visualization of Aggregated Battery Data
     short: VABD
     name: visualizationOfAggregatedBatteryData
@@ -256,6 +308,9 @@ usecases:
         title: Monitor cumulated Battery System discharge energy
       - id: 4
         title: Monitor current state of charge of the Battery System
+    actors:
+      - VisualizationAppliance
+      - BatterySystem
   - title: Visualization of Aggregated Photovoltaic Data
     short: VAPD
     name: visualizationOfAggregatedPhotovoltaicData
@@ -267,6 +322,9 @@ usecases:
         title: Monitor current photovoltaic power production
       - id: 3
         title: Monitor cumulated photovoltaic yield
+    actors:
+      - VisualizationAppliance
+      - PVSystem
 
   - title: Configuration of DHW System Functio
     short: CDSF
@@ -279,6 +337,9 @@ usecases:
         title: Start one-time DHW loading
       - id: 3
         title: Stop one-time DHW loading
+    actors:
+      - ConfigurationAppliance
+      - DHWCircuit
   - title: Configuration of Room Cooling System Function
     short: CRCSF
     name: configurationOfRoomCoolingSystemFunction
@@ -286,6 +347,9 @@ usecases:
     scenarios:
       - id: 1
         title: Set room cooling operation mode
+    actors:
+      - ConfigurationAppliance
+      - HVACRoom
   - title: Configuration of Room Heating System Function
     short: CRHSF
     name: configurationOfRoomHeatingSystemFunction
@@ -293,6 +357,9 @@ usecases:
     scenarios:
       - id: 1
         title: Set room heating operation mode
+    actors:
+      - ConfigurationAppliance
+      - HVACRoom
   - title: Monitoring of DHW System Function
     short: MDSF
     name: monitoringOfDhwSystemFunction
@@ -302,6 +369,9 @@ usecases:
         title: Monitor DHW operation mode
       - id: 2
         title: Monitor DHW overrun
+    actors:
+      - MonitoringAppliance
+      - DHWCircuit
   - title: Monitoring of Room Cooling System Function
     short: MRCSF
     name: monitoringOfRoomCoolingSystemFunction
@@ -309,6 +379,9 @@ usecases:
     scenarios:
       - id: 1
         title: Monitor room cooling operation mode
+    actors:
+      - MonitoringAppliance
+      - HVACRoom
   - title: Monitoring of Room Heating System Function
     short: MRHSF
     name: monitoringOfRoomHeatingSystemFunction
@@ -316,6 +389,9 @@ usecases:
     scenarios:
       - id: 1
         title: Monitor room heating operation mode
+    actors:
+      - MonitoringAppliance
+      - HVACRoom
   - title: Configuration of DHW Temperature
     short: CDT
     name: configurationOfDhwTemperature
@@ -323,6 +399,9 @@ usecases:
     scenarios:
       - id: 1
         title: Set DHW temperature setpoint
+    actors:
+      - DHWCircuit
+      - ConfigurationAppliance
   - title: Configuration of Room Cooling Temperature
     short: CRCT
     name: configurationOfRoomCoolingTemperature
@@ -330,6 +409,9 @@ usecases:
     scenarios:
       - id: 1
         title: Set room cooling temperature setpoing
+    actors:
+      - HVACRoom
+      - ConfigurationAppliance
   - title: Configuration of Room Heating Temperature
     short: CRHT
     name: configurationOfRoomHeatingTemperature
@@ -337,6 +419,9 @@ usecases:
     scenarios:
       - id: 1
         title: Set room heating temperature setpoint
+    actors:
+      - HVACRoom
+      - ConfigurationAppliance
   - title: Monitoring of DHW Temperature
     short: MDT
     name: monitoringOfDhwTemperature
@@ -344,6 +429,9 @@ usecases:
     scenarios:
       - id: 1
         title: Monitor DHW temperature
+    actors:
+      - DHWCircuit
+      - MonitoringAppliance
   - title: Monitoring of Outdoor Temperature
     short: MOT
     name: monitoringOfOutdoorTemperature
@@ -351,6 +439,9 @@ usecases:
     scenarios:
       - id: 1
         title: Monitor outdoor temperature
+    actors:
+      - OutdoorTemperatureSensor
+      - MonitoringAppliance
   - title: Monitoring of Room Temperature
     short: MRT
     name: monitoringOfRoomTemperature
@@ -358,6 +449,9 @@ usecases:
     scenarios:
       - id: 1
         title: Monitor HVAC room temperature
+    actors:
+      - HVACRoom
+      - MonitoringAppliance
   - title: Monitoring and Control of Smart Grid Ready Conditions
     short: MCSGRC
     name: monitoringAndControlOfSmartGridReadyConditions
@@ -383,6 +477,9 @@ usecases:
         title: Unsolicited Update of Committed Incentive Table
       - id: 5
         title: Unsolicited Update of Committed Power Plan
+    actors:
+      - EnergyConsumer
+      - CEM
   - title: Optimization of Self Consupmtion by Heat Pump Compressor Flexibility
     short: OHPCF
     name: optimizationOfSelfConsumptionByHeatPumpCompressorFlexibility
@@ -392,6 +489,9 @@ usecases:
         title: Monitor heat pump compressor's power consumption flexibility
       - id: 2
         title: Control heat pump compressor's power consumption flexibility
+    actors:
+      - CEM
+      - Compressor
   - title: Visualization of Heating Area Name
     short: VHAN
     name: visualizationOfHeatingAreaName
@@ -403,6 +503,11 @@ usecases:
         title: Visualize heating zone name
       - id: 3
         title: Visualize heating room name
+    actors:
+      - VisualizationAppliance
+      - HeatingCircuit
+      - HeatingZone
+      - HVACRoom
   - title: Flexible Load / Smart Heater DHW
     short: FLOA
     name: to be added

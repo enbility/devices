@@ -36,6 +36,18 @@
           "description": "The category of use cases it (mostly) belongs to",
           "enum": ["E-Mobility", "Grid", "Inverter", "HVAC"]
         },
+        "actors": {
+          "type": "array",
+          "description": "The possible actors to support this feature as defined in the use case spec chapter 3.2",
+          "items": {
+            "type": "string",
+            "description": "A SPINE use case actor",
+            "enum": ["Battery", "BatterySystem", "CEM", "ConfigurationAppliance", "Compressor", "ControllableSystem",
+            "DHWCircuit", "EnergyGuard", "EnergyBroker", "EnergyConsumer", "EVSE", "EV", "GridConnectionPoint", "HeatPump", 
+            "HeatingCircuit", "HeatingZone", "HVACRoom", "Inverter", "MonitoredUnit", "MonitoringAppliance", 
+            "OutdoorTemperatureSensor", "PVString", "PVSystem", "VisualizationAppliance"]
+          }
+        },
         "note": {
           "type": "string",
           "description": "Additional relevant information"

@@ -94,6 +94,10 @@
                   "type": "integer"
                 }
               },
+              "actor": {
+                "type": "string",
+                "enum": ["CEM", "EVSE", "EV", "HeatPump"]
+              },
               "notes": {
                 "type": "string",
                 "description": "Additional notes, findings about the use case and its scenarios"
@@ -102,12 +106,56 @@
             "required": ["name", "version", "scenarios"]
           }
         },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "entityType": {
+                "type": "string",                    
+                "description": "The SPINE entity type this feature is supported by",
+                "enum": ["CEM", "EVSE", "EV", "HeatPumpAppliance", "Generic"]
+              },
+              "role": {
+                "type": "string",
+                "description": "The feature role",
+                "enum": ["server", "client"]
+              },
+              "features": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "description": "The SPINE feature type"
+                    },
+                    "invalid": {
+                      "type": "boolean",
+                      "description": "Set to 'false' if the feature is reported as being supported but is not implemented"
+                    }
+                  }
+                }
+              },
+              "notes": {
+                "type": "string",
+                "description": "Additional notes, findings about the entities features"
+              }
+            }
+          }
+        },
+        "compatibledevices": {
+          "type": "array",
+          "description": "A list of compatible EEBUS devices"
+        },
         "notes": {
           "type": "string",
-          "description": " Additional notes, findings about the device"
+          "description": "Additional notes, findings about the device"
         }
       },
-      "required": ["product", "updated", "urls", "versions", "devicetype"]
+      "required": ["product", "updated", "urls", "versions"]
     }
   }
 }
