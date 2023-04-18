@@ -13,7 +13,7 @@
   "features": [
     {
       "role": "server",
-      "entityType": "Generic",
+      "entitytype": "Generic",
       "features": [
         {
           "type": "DeviceClassification"

@@ -171,7 +171,7 @@
   ],
   "features": [
     {
-      "entityType": "EVSE",
+      "entitytype": "EVSE",
       "role": "server",
       "features": [
         {
@@ -188,7 +188,7 @@
       "notes": "This \"Bill\" feature is not implemented.\n"
     },
     {
-      "entityType": "EV",
+      "entitytype": "EV",
       "role": "server",
       "features": [
         {
