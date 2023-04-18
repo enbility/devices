@@ -1,6 +1,22 @@
 {
-  "yaml.schemas": {
-    "./devices-schema.json": "devices.yaml",
-    "./usecases-schema.json": "usecases.yaml"
-  }
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "device.json"
+      ],
+      "url": "./schema/device.json"
+    },
+    {
+      "fileMatch": [
+        "devices.json"
+      ],
+      "url": "./schema/devices.json"
+    },
+    {
+      "fileMatch": [
+        "usecases.json"
+      ],
+      "url": "./schema/usecases.json"
+    }
+  ],
 }

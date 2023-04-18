@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "EEBUS usecases schema",
+  "$ref": "#/definitions/root",
+  "definitions": {
+    "root": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "The use case title as defined in the specification"
+          },
+          "short": {
+            "type": "string",
+            "description": "The short-name as defined in the use case specification chapter 1 'Scope of the document'"
+          },
+          "name": {
+            "type": "string",
+            "description": "The string content for the Element 'nodeManagementUseCaseData.useCaseInformation.useCaseSupport.useCaseName' within Use Case Discovery as defined in the use case specification chapter 3.1.2 'Use Case Discovery rules'"
+          },
+          "category": {
+            "type": "string",
+            "description": "The category of use cases it (mostly) belongs to",
+            "enum": [
+              "E-Mobility",
+              "Grid",
+              "Inverter",
+              "HVAC"
+            ]
+          },
+          "actors": {
+            "type": "array",
+            "description": "The possible actors to support this feature as defined in the use case spec chapter 3.2",
+            "items": {
+              "type": "string",
+              "description": "A SPINE use case actor",
+              "enum": [
+                "Battery",
+                "BatterySystem",
+                "CEM",
+                "ConfigurationAppliance",
+                "Compressor",
+                "ControllableSystem",
+                "DHWCircuit",
+                "EnergyGuard",
+                "EnergyBroker",
+                "EnergyConsumer",
+                "EVSE",
+                "EV",
+                "GridConnectionPoint",
+                "HeatPump",
+                "HeatingCircuit",
+                "HeatingZone",
+                "HVACRoom",
+                "Inverter",
+                "MonitoredUnit",
+                "MonitoringAppliance",
+                "OutdoorTemperatureSensor",
+                "PVString",
+                "PVSystem",
+                "VisualizationAppliance"
+              ]
+            }
+          },
+          "note": {
+            "type": "string",
+            "description": "Additional relevant information"
+          },
+          "scenarios": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "description": "The id of the scenario"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "The title of the scenario as defined in the use case specification"
+                }
+              },
+              "required": [
+                "id",
+                "title"
+              ]
+            },
+            "description": "The possible scenarios this use case supports"
+          }
+        },
+        "required": [
+          "title",
+          "short",
+          "name",
+          "category"
+        ],
+        "title": "UseCases"
+      }
+    }
+  }
+}

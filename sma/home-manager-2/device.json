@@ -1,0 +1,25 @@
+{
+  "product": "SMA Sunny Home Manager 2.0",
+  "updated": "12.04.2023",
+  "files": {
+    "discovery": "discovery-data.json"
+  },
+  "versions": {
+    "firmware": "2.11.5.R",
+    "ship": "1.0",
+    "spine": "1.1.1"
+  },
+  "devicetype": "Not provided",
+  "iscem": true,
+  "features": [
+    {
+      "entitytype": "Generic",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        }
+      ]
+    }
+  ],
+  "notes": "This device only supports non publicly available EEBUS use cases and does not announce any of them.\n"
+}

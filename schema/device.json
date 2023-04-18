@@ -1,42 +1,32 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "EEBUS devices schema",
+  "title": "EEBUS device summary schema",
   "$ref": "#/definitions/root",
   "definitions": {
     "root": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "devices": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Product"
-          }
-        }
-      }
-    },
-    "Product": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
         "product": {
-          "type": "string"
+          "type": "string",
+          "description": "Product or service name"
         },
         "updated": {
           "type": "string",
           "description": "The date DD.MM.YYYY the provided data was gathered"
         },
-        "urls": {
+        "files": {
           "type": "object",
           "additionalProperties": false,
+          "description": "Filenames for the source EEBUS SPINE data",
           "properties": {
             "discovery": {
               "type": "string",
-              "description": "The URL of the NodeManagementDetailedDiscoveryData response content"
+              "description": "The filename of the NodeManagementDetailedDiscoveryData response content"
             },
             "usecase": {
               "type": "string",
-              "description": "The URL of the NodeManagementUseCaseData response content"
+              "description": "The filename of the NodeManagementUseCaseData response content"
             }
           }
         },
@@ -62,6 +52,10 @@
           "type": "string",
           "description": "The 'devicetype' that is being reported in 'NodeManagementDetailedDiscoveryData'"
         },
+        "iscem": {
+          "type": "boolean",
+          "description": "Set to 'true' if the device is a energy management system"
+        },
         "usecases": {
           "type": "array",
           "items": {
@@ -82,21 +76,30 @@
               },
               "scenarios": {
                 "type": "array",
-                "description": "A list of the supported scenario 'id' values of the use case",
+                "description": "A list of the supported scenarios",
                 "items": {
-                  "type": "integer"
-                }
-              },
-              "invalidscenarios": {
-                "type": "array",
-                "description": "A list of the scenario 'id' values of the use case reported as supported, but are actually not implemented",
-                "items": {
-                  "type": "integer"
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "description": "The scenario ID as defined in the use case"
+                    },
+                    "invalid": {
+                      "type": "boolean",
+                      "description": "Set to 'false' if the scenario is reported as being supported but is not implemented"
+                    }
+                  },
+                  "required": ["id"]
                 }
               },
               "actor": {
-                "type": "string",
-                "enum": ["CEM", "EVSE", "EV", "HeatPump"]
+                "$ref": "#/definitions/actor",
+                "description": "The actor reported by the device for this use case"
+              },
+              "correctedactor": {
+                "$ref": "#/definitions/actor",
+                "description": "If the reported actor is invalid, this contains the actor it should have instead"
               },
               "notes": {
                 "type": "string",
@@ -112,7 +115,7 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "entityType": {
+              "entitytype": {
                 "type": "string",                    
                 "description": "The SPINE entity type this feature is supported by",
                 "enum": ["CEM", "EVSE", "EV", "HeatPumpAppliance", "Generic"]
@@ -155,7 +158,36 @@
           "description": "Additional notes, findings about the device"
         }
       },
-      "required": ["product", "updated", "urls", "versions"]
+      "required": ["product", "updated", "files", "versions"]
+    },
+    "actor": {
+      "type": "string",
+      "enum": [
+        "Battery",
+        "BatterySystem",
+        "CEM",
+        "ConfigurationAppliance",
+        "Compressor",
+        "ControllableSystem",
+        "DHWCircuit",
+        "EnergyGuard",
+        "EnergyBroker",
+        "EnergyConsumer",
+        "EVSE",
+        "EV",
+        "GridConnectionPoint",
+        "HeatPump",
+        "HeatingCircuit",
+        "HeatingZone",
+        "HVACRoom",
+        "Inverter",
+        "MonitoredUnit",
+        "MonitoringAppliance",
+        "OutdoorTemperatureSensor",
+        "PVString",
+        "PVSystem",
+        "VisualizationAppliance"
+      ]
     }
   }
 }

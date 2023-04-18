@@ -1,0 +1,231 @@
+{
+  "product": "Elli Connect / Pro",
+  "updated": "12.04.2023",
+  "files": {
+    "discovery": "discovery-data.json",
+    "usecase": "usecase-data.json"
+  },
+  "versions": {
+    "firmware": "v3.8.12",
+    "ship": "1.0",
+    "spine": "1.3.0"
+  },
+  "devicetype": "Generic",
+  "usecases": [
+    {
+      "name": "evseCommissioningAndConfiguration",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
+      ],
+      "actor": "EVSE"
+    },
+    {
+      "name": "evCommissioningAndConfiguration",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2,
+          "invalid": true
+        },
+        {
+          "id": 3,
+          "invalid": true
+        },
+        {
+          "id": 4,
+          "invalid": true
+        },
+        {
+          "id": 5,
+          "invalid": true
+        },
+        {
+          "id": 6,
+          "invalid": true
+        },
+        {
+          "id": 7,
+          "invalid": true
+        },
+        {
+          "id": 8
+        }
+      ],
+      "actor": "EV",
+      "notes": "Only the scenarios \"EV connected\" and \"EV disconnected\" are really supported.\nAll other scenarios require the EV to communicate via ISO15118 with the EVSE,\nwhich this device is not capable of.\n"
+    },
+    {
+      "name": "measurementOfElectricityDuringEvCharging",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2,
+          "invalid": true
+        },
+        {
+          "id": 3,
+          "invalid": true
+        }
+      ],
+      "actor": "EV",
+      "notes": "The Elli Charger Connect does not contain a meter. For that model the provided\nmeasurements are only assumptions. Also only the scenario \"Measure EV charging current\"\nis really supported. \n"
+    },
+    {
+      "name": "overloadProtectionByEvChargingCurrentCurtailment",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "actor": "EV"
+    },
+    {
+      "name": "optimizationOfSelfConsumptionDuringEvCharging",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "actor": "EV",
+      "notes": "Self consumption information from the HEMS is transformed into\noverload protection values.\n"
+    },
+    {
+      "name": "coordinatedEvCharging",
+      "version": "1.0.1",
+      "invalid": true,
+      "scenarios": [
+        {
+          "id": 1,
+          "invalid": true
+        },
+        {
+          "id": 2,
+          "invalid": true
+        },
+        {
+          "id": 3,
+          "invalid": true
+        },
+        {
+          "id": 4,
+          "invalid": true
+        },
+        {
+          "id": 5,
+          "invalid": true
+        },
+        {
+          "id": 6,
+          "invalid": true
+        },
+        {
+          "id": 7,
+          "invalid": true
+        },
+        {
+          "id": 8
+        }
+      ],
+      "actor": "EV",
+      "notes": "This use case is reported as being available, but it is not. The use case\nrequires the EV to communicate via ISO15118, which this device is not capable of. \n"
+    },
+    {
+      "name": "evChargingSummary",
+      "version": "1.0.1",
+      "invalid": true,
+      "scenarios": [
+        {
+          "id": 1,
+          "invalid": true
+        }
+      ],
+      "actor": "EV",
+      "notes": "This is use case is reported as being available, but not implemented.\n"
+    }
+  ],
+  "features": [
+    {
+      "entityType": "EVSE",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        },
+        {
+          "type": "Bill",
+          "invalid": true
+        },
+        {
+          "type": "DeviceDiagnosis"
+        }
+      ],
+      "notes": "This \"Bill\" feature is not implemented.\n"
+    },
+    {
+      "entityType": "EV",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        },
+        {
+          "type": "DeviceDiagnosis"
+        },
+        {
+          "type": "ElectricalConnection"
+        },
+        {
+          "type": "LoadControl"
+        },
+        {
+          "type": "Measurement"
+        },
+        {
+          "type": "DeviceConfiguration"
+        },
+        {
+          "type": "TimeSeries",
+          "invalid": true
+        },
+        {
+          "type": "IncentiveTable",
+          "invalid": true
+        },
+        {
+          "type": "Identification",
+          "invalid": true
+        }
+      ],
+      "notes": "This features \"TImeSeries\", \"IncentiveTable\" and \"Identification requires \nthe EV to communicate via ISO15118, which this device is not capable of. \nThese features are not implemented.\n"
+    }
+  ],
+  "compatibledevices": [
+    "evcc.io"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "product": "Vaillant Arotherm VWL 75/6A",
+  "updated": "24.01.2023",
+  "files": {
+    "discovery": "discovery-data.json"
+  },
+  "versions": {
+    "firmware": "Unknown",
+    "ship": "1.0",
+    "spine": "1.1.1"
+  },
+  "devicetype": "Generic",
+  "features": [
+    {
+      "role": "server",
+      "entityType": "Generic",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        }
+      ]
+    }
+  ],
+  "notes": "This device only supports non publicly available EEBUS use cases and does not announce any of them.\n"
+}

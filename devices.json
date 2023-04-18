@@ -1,0 +1,8 @@
+[
+  "elli/charger-connect-pro/device.json",
+  "evcc.io/evcc/device.json",
+  "porsche/mobile-charger-connect/device.json",
+  "sma/home-manager-2/device.json",
+  "vaillant/arotherm-vwl-75:6a/device.json",
+  "viessmann/vitoconnect/device.json"
+]

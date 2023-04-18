@@ -1,0 +1,147 @@
+{
+  "product": "evcc.io",
+  "updated": "12.04.2023",
+  "files": {
+    "discovery": "discovery-data.json",
+    "usecase": "usecase-data.json"
+  },
+  "versions": {
+    "firmware": "0.115.0",
+    "ship": "1.0",
+    "spine": "1.1.1"
+  },
+  "devicetype": "EnergyManagementSystem",
+  "iscem": true,
+  "usecases": [
+    {
+      "name": "evseCommissioningAndConfiguration",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
+      ],
+      "actor": "CEM"
+    },
+    {
+      "name": "evCommissioningAndConfiguration",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 7
+        },
+        {
+          "id": 8
+        }
+      ],
+      "actor": "CEM"
+    },
+    {
+      "name": "measurementOfElectricityDuringEvCharging",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "actor": "CEM"
+    },
+    {
+      "name": "overloadProtectionByEvChargingCurrentCurtailment",
+      "version": "1.0.1b",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "actor": "CEM"
+    },
+    {
+      "name": "evStateOfCharge",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "CEM",
+      "notes": "The actor is wrong and should be \"MonitoringAppliance\""
+    },
+    {
+      "name": "optimizationOfSelfConsumptionDuringEvCharging",
+      "version": "1.0.1b",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "actor": "CEM"
+    }
+  ],
+  "features": [
+    {
+      "entitytype": "CEM",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        },
+        {
+          "type": "DeviceDiagnosis"
+        }
+      ]
+    }
+  ],
+  "compatibledevices": [
+    "Porsche Mobile Charger Connect",
+    "Elli Connect / Pro"
+  ]
+}

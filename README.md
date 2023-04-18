@@ -14,7 +14,15 @@ The data can be collected by using the [eebus-go](https://github.com/enbility/ee
 
 - Each brand will get its own folder
 - Each device/service gets its own subfolder under the brand
-- The `devices.yaml` file contains the summary & findings for each device/service
-- The `usecases.yaml` file contains details about each known use case
-- For both yaml files, there is a JSON schema available, to make editing easier
-- The repository contains a default setting for VS Code to automatically use the JSON schema files when editing the YAML files
+- Each folder contains:
+  - `discovery-data.json` for the `NodeManagementDetailedDiscoveryData` response
+  - `usecase-data.json` for the `NodeManagementUseCaseData` response
+  - `device.json` for the summary & findings for each device/service
+- The root folders `device.json` contains a list of relative paths to the `device.json` files
+- The root folders `usecases.json` file contains details about each known use case
+- The root folder `schema` contains JSON schema for all the different json files
+- The repository contains a default setting for VS Code to automatically use the JSON schema files when editing the various JSON files
+
+## Todo / Wishlist
+
+- Automatically create a generic `device.json` file for provided SPINE responses

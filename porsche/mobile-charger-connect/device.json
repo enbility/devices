@@ -1,0 +1,214 @@
+{
+  "product": "Porsche Mobile Charger Connect",
+  "updated": "12.04.2023",
+  "files": {
+    "discovery": "discovery-data.json",
+    "usecase": "usecase-data.json"
+  },
+  "versions": {
+    "firmware": "3014",
+    "ship": "1.0",
+    "spine": "1.1.1"
+  },
+  "devicetype": "ChargingStation",
+  "usecases": [
+    {
+      "name": "evseCommissioningAndConfiguration",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
+      ],
+      "actor": "EV",
+      "correctedactor": "EVSE",
+      "notes": "The actor should be \"EVSE\".\n"
+    },
+    {
+      "name": "evCommissioningAndConfiguration",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 7
+        },
+        {
+          "id": 8
+        }
+      ],
+      "actor": "EV"
+    },
+    {
+      "name": "measurementOfElectricityDuringEvCharging",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "actor": "EV"
+    },
+    {
+      "name": "overloadProtectionByEvChargingCurrentCurtailment",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "actor": "EV"
+    },
+    {
+      "name": "optimizationOfSelfConsumptionDuringEvCharging",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "actor": "EV"
+    },
+    {
+      "name": "coordinatedEvCharging",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        },
+        {
+          "id": 6
+        },
+        {
+          "id": 7
+        },
+        {
+          "id": 8
+        }
+      ],
+      "actor": "EV"
+    },
+    {
+      "name": "evStateOfCharge",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        }
+      ],
+      "actor": "EV"
+    },
+    {
+      "name": "evChargingSummary",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        }
+      ],
+      "actor": "EV"
+    }
+  ],
+  "features": [
+    {
+      "entitytype": "EVSE",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        },
+        {
+          "type": "DeviceDiagnosis"
+        },
+        {
+          "type": "Bill"
+        }
+      ]
+    },
+    {
+      "entitytype": "EV",
+      "role": "server",
+      "features": [
+        {
+          "type": "LoadControl"
+        },
+        {
+          "type": "ElectricalConnection"
+        },
+        {
+          "type": "Measurement"
+        },
+        {
+          "type": "DeviceConfiguration"
+        },
+        {
+          "type": "DeviceClassification"
+        },
+        {
+          "type": "TimeSeries"
+        },
+        {
+          "type": "IncentiveType"
+        },
+        {
+          "type": "DeviceDiagnosis"
+        },
+        {
+          "type": "Identification"
+        }
+      ]
+    }
+  ],
+  "compatibledevices": [
+    "evcc.io"
+  ]
+}

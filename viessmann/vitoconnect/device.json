@@ -1,0 +1,68 @@
+{
+  "product": "Viessmann Vitoconnect",
+  "updated": "13.10.2022",
+  "files": {
+    "discovery": "discovery-data.json",
+    "usecase": "usecase-data.json"
+  },
+  "versions": {
+    "firmware": "Unknown",
+    "ship": "1.0",
+    "spine": "1.2.0"
+  },
+  "devicetype": "Generic",
+  "usecases": [
+    {
+      "name": "monitoringAndControlOfSmartGridReadyConditions",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
+      ],
+      "actor": "HeatPump"
+    },
+    {
+      "name": "monitoringOfPowerConsumption",
+      "version": "1.0.0 draft3",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "HeatPump"
+    }
+  ],
+  "features": [
+    {
+      "entityType": "HeatPumpAppliance",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        },
+        {
+          "type": "ElectricalConnection"
+        },
+        {
+          "type": "HVAC"
+        },
+        {
+          "type": "Measurement"
+        }
+      ]
+    }
+  ]
+}

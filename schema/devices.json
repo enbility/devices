@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "EEBUS devices list schema",
+  "$ref": "#/definitions/root",
+  "definitions": {
+    "root": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "additionalProperties": false,
+        "description": "Relative file reference of a device.json summary file"
+      }
+    }
+  }
+}
