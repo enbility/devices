@@ -207,8 +207,5 @@
         }
       ]
     }
-  ],
-  "compatibledevices": [
-    "evcc.io"
   ]
 }

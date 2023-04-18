@@ -149,10 +149,6 @@
             }
           }
         },
-        "compatibledevices": {
-          "type": "array",
-          "description": "A list of compatible EEBUS devices"
-        },
         "notes": {
           "type": "string",
           "description": "Additional notes, findings about the device"
