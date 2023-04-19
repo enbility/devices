@@ -25,7 +25,7 @@
       ],
       "actor": "EV",
       "correctedactor": "EVSE",
-      "notes": "The actor should be \"EVSE\".\n"
+      "notes": "The actor should be \"EVSE\"."
     },
     {
       "name": "evCommissioningAndConfiguration",
