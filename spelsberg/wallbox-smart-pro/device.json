@@ -36,19 +36,24 @@
                     "id": 1
                 },
                 {
-                    "id": 2
+                    "id": 2,
+                    "invalid": true
                 },
                 {
-                    "id": 3
+                    "id": 3,
+                    "invalid": true
                 },
                 {
-                    "id": 4
+                    "id": 4,
+                    "invalid": true
                 },
                 {
-                    "id": 5
+                    "id": 5,
+                    "invalid": true
                 },
                 {
-                    "id": 6
+                    "id": 6,
+                    "invalid": true
                 },
                 {
                     "id": 7
@@ -57,7 +62,8 @@
                     "id": 8
                 }
             ],
-            "actor": "EV"
+            "actor": "EV",
+            "notes": "ISO15118 scenarios (3, 4, 5, 6) are reported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
         },
         {
             "name": "measurementOfElectricityDuringEvCharging",
@@ -147,24 +153,6 @@
         }
     ],
     "features": [
-        {
-            "entitytype": "DeviceInformation",
-            "role": "special",
-            "features": [
-                {
-                    "type": "NodeManagement"
-                }
-            ]
-        },
-        {
-            "entitytype": "DeviceInformation",
-            "role": "server",
-            "features": [
-                {
-                    "type": "DeviceClassification"
-                }
-            ]
-        },
         {
             "entitytype": "EVSE",
             "role": "server",
