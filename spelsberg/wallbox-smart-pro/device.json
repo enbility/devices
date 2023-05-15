@@ -1,226 +1,226 @@
 {
-  "product": "Spelsberg Wallbox Smart Pro",
-  "updated": "15.05.2023",
-  "files": {
-    "discovery": "discovery-data.json",
-    "usecase": "usecase-data.json"
-  },
-  "versions": {
-    "firmware": "5.30.0-15956",
-    "ship": "1.0",
-    "spine": "1.3.0"
-  },
-  "devicetype": "ChargingStation",
-  "usecases": [
-    {
-      "name": "overloadProtectionByEvChargingCurrentCurtailment",
-      "version": "1.0.1",
-      "scenarios": [
+    "devicetype": "ChargingStation",
+    "features": [
         {
-          "id": 1
+            "entitytype": "DeviceInformation",
+            "features": [
+                {
+                    "type": "NodeManagement"
+                }
+            ],
+            "role": "special"
         },
         {
-          "id": 2
+            "entitytype": "DeviceInformation",
+            "features": [
+                {
+                    "type": "DeviceClassification"
+                }
+            ],
+            "role": "server"
         },
         {
-          "id": 3
+            "entitytype": "EVSE",
+            "features": [
+                {
+                    "type": "DeviceClassification"
+                },
+                {
+                    "type": "Bill"
+                },
+                {
+                    "type": "DeviceDiagnosis"
+                }
+            ],
+            "role": "server"
+        },
+        {
+            "entitytype": "EV",
+            "features": [
+                {
+                    "type": "DeviceClassification"
+                },
+                {
+                    "type": "DeviceDiagnosis"
+                },
+                {
+                    "type": "ElectricalConnection"
+                },
+                {
+                    "type": "LoadControl"
+                },
+                {
+                    "type": "Measurement"
+                },
+                {
+                    "type": "DeviceConfiguration"
+                },
+                {
+                    "type": "TimeSeries"
+                },
+                {
+                    "type": "IncentiveTable"
+                },
+                {
+                    "type": "Identification"
+                }
+            ],
+            "role": "server"
+        },
+        {
+            "entitytype": "EV",
+            "features": [
+                {
+                    "type": "Generic"
+                }
+            ],
+            "role": "client"
         }
-      ],
-      "actor": "EV"
+    ],
+    "files": {
+        "discovery": "discovery-data.json",
+        "usecase": "usecase-data.json"
     },
-    {
-      "name": "evCommissioningAndConfiguration",
-      "version": "1.0.1",
-      "scenarios": [
+    "product": "Spelsberg Wallbox Smart Pro",
+    "updated": "15.05.2023",
+    "usecases": [
         {
-          "id": 1
+            "actor": "EV",
+            "name": "overloadProtectionByEvChargingCurrentCurtailment",
+            "scenarios": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                },
+                {
+                    "id": 3
+                }
+            ],
+            "version": "1.0.1"
         },
         {
-          "id": 2
+            "actor": "EV",
+            "name": "evCommissioningAndConfiguration",
+            "scenarios": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                },
+                {
+                    "id": 3
+                },
+                {
+                    "id": 4
+                },
+                {
+                    "id": 5
+                },
+                {
+                    "id": 6
+                },
+                {
+                    "id": 7
+                },
+                {
+                    "id": 8
+                }
+            ],
+            "version": "1.0.1"
         },
         {
-          "id": 3
+            "actor": "EV",
+            "name": "measurementOfElectricityDuringEvCharging",
+            "scenarios": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                },
+                {
+                    "id": 3
+                }
+            ],
+            "version": "1.0.1"
         },
         {
-          "id": 4
+            "actor": "EV",
+            "name": "optimizationOfSelfConsumptionDuringEvCharging",
+            "scenarios": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                },
+                {
+                    "id": 3
+                }
+            ],
+            "version": "1.0.1"
         },
         {
-          "id": 5
+            "actor": "EV",
+            "name": "coordinatedEvCharging",
+            "scenarios": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                },
+                {
+                    "id": 3
+                },
+                {
+                    "id": 4
+                },
+                {
+                    "id": 5
+                },
+                {
+                    "id": 6
+                },
+                {
+                    "id": 7
+                },
+                {
+                    "id": 8
+                }
+            ],
+            "version": "1.0.1"
         },
         {
-          "id": 6
+            "actor": "EVSE",
+            "name": "evseCommissioningAndConfiguration",
+            "scenarios": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                }
+            ],
+            "version": "1.0.1"
         },
         {
-          "id": 7
-        },
-        {
-          "id": 8
+            "actor": "EVSE",
+            "name": "evChargingSummary",
+            "scenarios": [
+                {
+                    "id": 1
+                }
+            ],
+            "version": "1.0.1"
         }
-      ],
-      "actor": "EV"
-    },
-    {
-      "name": "measurementOfElectricityDuringEvCharging",
-      "version": "1.0.1",
-      "scenarios": [
-        {
-          "id": 1
-        },
-        {
-          "id": 2
-        },
-        {
-          "id": 3
-        }
-      ],
-      "actor": "EV"
-    },
-    {
-      "name": "optimizationOfSelfConsumptionDuringEvCharging",
-      "version": "1.0.1",
-      "scenarios": [
-        {
-          "id": 1
-        },
-        {
-          "id": 2
-        },
-        {
-          "id": 3
-        }
-      ],
-      "actor": "EV"
-    },
-    {
-      "name": "coordinatedEvCharging",
-      "version": "1.0.1",
-      "scenarios": [
-        {
-          "id": 1
-        },
-        {
-          "id": 2
-        },
-        {
-          "id": 3
-        },
-        {
-          "id": 4
-        },
-        {
-          "id": 5
-        },
-        {
-          "id": 6
-        },
-        {
-          "id": 7
-        },
-        {
-          "id": 8
-        }
-      ],
-      "actor": "EV"
-    },
-    {
-      "name": "evseCommissioningAndConfiguration",
-      "version": "1.0.1",
-      "scenarios": [
-        {
-          "id": 1
-        },
-        {
-          "id": 2
-        }
-      ],
-      "actor": "EVSE",
-    },
-    {
-      "name": "evChargingSummary",
-      "version": "1.0.1",
-      "scenarios": [
-        {
-          "id": 1
-        }
-      ],
-      "actor": "EVSE"
+    ],
+    "versions": {
+        "firmware": "5.30.0-15956",
+        "ship": "1.0",
+        "spine": "1.3.0"
     }
-  ],
-  "features": [
-	{
-      "entitytype": "DeviceInformation",
-      "role": "special",
-      "features": [
-        {
-          "type": "NodeManagement"
-        }
-      ]
-    },
-	{
-      "entitytype": "DeviceInformation",
-      "role": "server",
-      "features": [
-        {
-          "type": "DeviceClassification"
-        }
-      ]
-    },
-	{
-      "entitytype": "EVSE",
-      "role": "server",
-      "features": [
-        {
-          "type": "DeviceClassification"
-        },
-        {
-          "type": "Bill"
-        },
-        {
-          "type": "DeviceDiagnosis"
-        }
-      ]
-    },
-	{
-      "entitytype": "EV",
-      "role": "server",
-      "features": [
-        {
-          "type": "DeviceClassification"
-        },
-        {
-          "type": "DeviceDiagnosis"
-        },
-        {
-          "type": "ElectricalConnection"
-        },
-        {
-          "type": "LoadControl"
-        },
-		{
-          "type": "Measurement"
-        },
-		{
-          "type": "DeviceConfiguration"
-        },
-		{
-          "type": "TimeSeries"
-        },
-		{
-          "type": "IncentiveTable"
-        },
-		{
-          "type": "Identification"
-        }
-      ]
-    },
-	{
-      "entitytype": "EV",
-      "role": "client",
-      "features": [
-        {
-          "type": "Generic"
-        }
-      ]
-    }
-  ]
 }
