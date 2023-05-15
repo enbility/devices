@@ -63,7 +63,7 @@
                 }
             ],
             "actor": "EV",
-            "notes": "ISO15118 scenarios (3, 4, 5, 6) are reported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
+            "notes": "ISO15118 scenarios (3-6) are reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
         },
         {
             "name": "measurementOfElectricityDuringEvCharging",
@@ -86,47 +86,62 @@
             "version": "1.0.1",
             "scenarios": [
                 {
-                    "id": 1
+                    "id": 1,
+                    "invalid": true
                 },
                 {
-                    "id": 2
+                    "id": 2,
+                    "invalid": true
                 },
                 {
-                    "id": 3
+                    "id": 3,
+                    "invalid": true
                 }
             ],
-            "actor": "EV"
+            "actor": "EV",
+            "invalid": true,
+            "notes": "ISO15118 scenarios (1, 2, 3) are reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
         },
         {
             "name": "coordinatedEvCharging",
             "version": "1.0.1",
             "scenarios": [
                 {
-                    "id": 1
+                    "id": 1,
+                    "invalid": true
                 },
                 {
-                    "id": 2
+                    "id": 2,
+                    "invalid": true
                 },
                 {
-                    "id": 3
+                    "id": 3,
+                    "invalid": true
                 },
                 {
-                    "id": 4
+                    "id": 4,
+                    "invalid": true
                 },
                 {
-                    "id": 5
+                    "id": 5,
+                    "invalid": true
                 },
                 {
-                    "id": 6
+                    "id": 6,
+                    "invalid": true
                 },
                 {
-                    "id": 7
+                    "id": 7,
+                    "invalid": true
                 },
                 {
-                    "id": 8
+                    "id": 8,
+                    "invalid": true
                 }
             ],
-            "actor": "EV"
+            "actor": "EV",
+            "invalid": true,
+            "notes": "ISO15118 scenarios (1-8) are reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
         },
         {
             "name": "evseCommissioningAndConfiguration",
@@ -149,7 +164,9 @@
                     "id": 1
                 }
             ],
-            "actor": "EVSE"
+            "actor": "EVSE",
+            "invalid": true,
+            "notes": "ISO15118 scenario (1) is reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
         }
     ],
     "features": [
@@ -191,15 +208,19 @@
                     "type": "DeviceConfiguration"
                 },
                 {
-                    "type": "TimeSeries"
+                    "type": "TimeSeries",
+                    "invalid": true
                 },
                 {
-                    "type": "IncentiveTable"
+                    "type": "IncentiveTable",
+                    "invalid": true
                 },
                 {
-                    "type": "Identification"
+                    "type": "Identification",
+                    "invalid": true
                 }
-            ]
+            ],
+            "notes": "The features \"TimeSeries\", \"IncentiveTable\", and \"Identification\" require the EV to communicate via ISO15118, which is disabled in the device setup and no compatible EV was connected anyway."
         },
         {
             "entitytype": "EV",
