@@ -46,7 +46,7 @@
                                 ]
                             },
                             {
-                                "msgCounter": 168613
+                                "msgCounter": 542
                             },
                             {
                                 "msgCounterReference": 1
@@ -130,6 +130,25 @@
                                                                     },
                                                                     {
                                                                         "entityType": "EVSE"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "entityAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "entityType": "EV"
                                                                     }
                                                                 ]
                                                             }
@@ -483,6 +502,650 @@
                                                                     }
                                                                 ]
                                                             }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "featureAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "feature": 4
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "featureType": "DeviceClassification"
+                                                                    },
+                                                                    {
+                                                                        "role": "server"
+                                                                    },
+                                                                    {
+                                                                        "supportedFunction": [
+                                                                            [
+                                                                                {
+                                                                                    "function": "deviceClassificationManufacturerData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "featureAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "feature": 5
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "featureType": "DeviceDiagnosis"
+                                                                    },
+                                                                    {
+                                                                        "role": "server"
+                                                                    },
+                                                                    {
+                                                                        "supportedFunction": [
+                                                                            [
+                                                                                {
+                                                                                    "function": "deviceDiagnosisStateData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "featureAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "feature": 7
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "featureType": "ElectricalConnection"
+                                                                    },
+                                                                    {
+                                                                        "role": "server"
+                                                                    },
+                                                                    {
+                                                                        "supportedFunction": [
+                                                                            [
+                                                                                {
+                                                                                    "function": "electricalConnectionParameterDescriptionListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "function": "electricalConnectionPermittedValueSetListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "function": "electricalConnectionDescriptionListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "featureAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "feature": 10
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "featureType": "LoadControl"
+                                                                    },
+                                                                    {
+                                                                        "role": "server"
+                                                                    },
+                                                                    {
+                                                                        "supportedFunction": [
+                                                                            [
+                                                                                {
+                                                                                    "function": "loadControlLimitDescriptionListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "function": "loadControlLimitListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "write": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "featureAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "feature": 11
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "featureType": "Measurement"
+                                                                    },
+                                                                    {
+                                                                        "role": "server"
+                                                                    },
+                                                                    {
+                                                                        "supportedFunction": [
+                                                                            [
+                                                                                {
+                                                                                    "function": "measurementConstraintsListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "function": "measurementDescriptionListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "function": "measurementListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "featureAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "feature": 24
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "featureType": "DeviceConfiguration"
+                                                                    },
+                                                                    {
+                                                                        "role": "server"
+                                                                    },
+                                                                    {
+                                                                        "supportedFunction": [
+                                                                            [
+                                                                                {
+                                                                                    "function": "deviceConfigurationKeyValueDescriptionListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "function": "deviceConfigurationKeyValueListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "featureAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "feature": 26
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "featureType": "TimeSeries"
+                                                                    },
+                                                                    {
+                                                                        "role": "server"
+                                                                    },
+                                                                    {
+                                                                        "supportedFunction": [
+                                                                            [
+                                                                                {
+                                                                                    "function": "timeSeriesConstraintsListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "function": "timeSeriesDescriptionListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "function": "timeSeriesListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "write": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "featureAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "feature": 28
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "featureType": "IncentiveTable"
+                                                                    },
+                                                                    {
+                                                                        "role": "server"
+                                                                    },
+                                                                    {
+                                                                        "supportedFunction": [
+                                                                            [
+                                                                                {
+                                                                                    "function": "incentiveTableConstraintsData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "function": "incentiveTableData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "write": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "function": "incentiveTableDescriptionData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "write": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "featureAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "feature": 30
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "featureType": "Identification"
+                                                                    },
+                                                                    {
+                                                                        "role": "server"
+                                                                    },
+                                                                    {
+                                                                        "supportedFunction": [
+                                                                            [
+                                                                                {
+                                                                                    "function": "identificationListData"
+                                                                                },
+                                                                                {
+                                                                                    "possibleOperations": [
+                                                                                        {
+                                                                                            "read": [
+                                                                                                {
+                                                                                                    "partial": [
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        [
+                                                            {
+                                                                "description": [
+                                                                    {
+                                                                        "featureAddress": [
+                                                                            {
+                                                                                "entity": [
+                                                                                    1,
+                                                                                    1
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "feature": 1001
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "featureType": "Generic"
+                                                                    },
+                                                                    {
+                                                                        "role": "client"
+                                                                    },
+                                                                    {
+                                                                        "description": "Heartbeat device diagnosis client feature"
+                                                                    }
+                                                                ]
+                                                            }
                                                         ]
                                                     ]
                                                 }
@@ -497,4 +1160,4 @@
             }
         }
     ]
-}
+}
