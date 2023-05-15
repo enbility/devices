@@ -1,6 +1,6 @@
 {
   "product": "Spelsberg Wallbox Smart Pro",
-  "updated": "12.05.2023",
+  "updated": "15.05.2023",
   "files": {
     "discovery": "discovery-data.json",
     "usecase": "usecase-data.json"
@@ -147,21 +147,21 @@
     }
   ],
   "features": [
-    {
-      "entitytype": "DeviceInformation",
-      "role": "server",
-      "features": [
-        {
-          "type": "DeviceClassification"
-        }
-      ]
-    },
 	{
       "entitytype": "DeviceInformation",
       "role": "special",
       "features": [
         {
           "type": "NodeManagement"
+        }
+      ]
+    },
+	{
+      "entitytype": "DeviceInformation",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceClassification"
         }
       ]
     },
@@ -177,6 +177,48 @@
         },
         {
           "type": "DeviceDiagnosis"
+        }
+      ]
+    },
+	{
+      "entitytype": "EV",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        },
+        {
+          "type": "DeviceDiagnosis"
+        },
+        {
+          "type": "ElectricalConnection"
+        },
+        {
+          "type": "LoadControl"
+        },
+		{
+          "type": "Measurement"
+        },
+		{
+          "type": "DeviceConfiguration"
+        },
+		{
+          "type": "TimeSeries"
+        },
+		{
+          "type": "IncentiveTable"
+        },
+		{
+          "type": "Identification"
+        }
+      ]
+    },
+	{
+      "entitytype": "EV",
+      "role": "client",
+      "features": [
+        {
+          "type": "Generic"
         }
       ]
     }
