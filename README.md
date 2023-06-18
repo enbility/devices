@@ -6,7 +6,7 @@ The relevant messages are response for `NodeManagementDetailedDiscoveryData` and
 
 ## Contribution
 
-To add more data, feel free to create a PR with the corresponding messages. Please also update or add the corresponding data into the `devices.yaml` file as part of the PR.
+To add more data, feel free to create a PR with the corresponding messages. Please also update or add the corresponding data into the `devices.json` file as part of the PR.
 
 The data can be collected by using the [eebus-go](https://github.com/enbility/eebus-go/) library and follow its usage details. It does not matter if the EVSE or HEMS variant is used.
 
