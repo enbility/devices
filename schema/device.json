@@ -64,7 +64,7 @@
             "properties": {
               "name": {
                 "type": "string",
-                "description": "The usecase 'name' value of the supported use case defined in 'usecases.yaml'"
+                "description": "The usecase 'name' value of the supported use case defined in 'usecases.json'"
               },
               "version": {
                 "type": "string",
