@@ -138,6 +138,33 @@
           "type": "DeviceDiagnosis"
         }
       ]
+    },
+    {
+      "entitytype": "CEM",
+      "role": "client",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        },
+        {
+          "type": "DeviceDiagnosis"
+        },
+        {
+          "type": "DeviceConfiguration"
+        },
+        {
+          "type": "ElectricalConnection"
+        },
+        {
+          "type": "Measurement"
+        },
+        {
+          "type": "LoadControl"
+        },
+        {
+          "type": "Identification"
+        }
+      ]
     }
   ]
 }

@@ -12,11 +12,11 @@
   "devicetype": "Generic",
   "features": [
     {
-      "role": "server",
       "entitytype": "Generic",
+      "role": "client",
       "features": [
         {
-          "type": "DeviceClassification"
+          "type": "Generic"
         }
       ]
     }

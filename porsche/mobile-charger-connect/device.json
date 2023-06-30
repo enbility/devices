@@ -175,6 +175,18 @@
       ]
     },
     {
+      "entitytype": "EVSE",
+      "role": "client",
+      "features": [
+        {
+          "type": "DeviceDiagnosis"
+        },
+        {
+          "type": "DeviceClassification"
+        }
+      ]
+    },
+    {
       "entitytype": "EV",
       "role": "server",
       "features": [

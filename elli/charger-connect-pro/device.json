@@ -223,6 +223,15 @@
         }
       ],
       "notes": "The features \"TimeSeries\", \"IncentiveTable\", and \"Identification\" require the EV to communicate via ISO15118, which this device is not capable of. These features are not implemented."
+    },
+    {
+      "entitytype": "EV",
+      "role": "client",
+      "features": [
+        {
+          "type": "Generic"
+        }
+      ]
     }
   ]
 }

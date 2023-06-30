@@ -14,9 +14,10 @@
   "features": [
     {
       "entitytype": "Generic",
+      "role": "client",
       "features": [
         {
-          "type": "DeviceClassification"
+          "type": "Generic"
         }
       ]
     }
