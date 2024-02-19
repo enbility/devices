@@ -1,0 +1,27 @@
+{
+  "product": "Vaillant VR920",
+  "updated": "19.02.2024",
+  "files": {
+    "discovery": "discovery-data.json",
+    "usecase": "usecase-data.json"
+  },
+  "versions": {
+    "firmware": "Unknown",
+    "ship": "1.0",
+    "spine": "1.1.1"
+  },
+  "devicetype": "Generic",
+  "features": [
+    {
+      "entitytype": "Generic",
+      "role": "client",
+      "features": [
+        {
+          "type": "Generic"
+        }
+      ]
+    }
+  ],
+  "notes": "This device only supports EEBUS use cases that are not open source and does not announce any of them."
+}
+
