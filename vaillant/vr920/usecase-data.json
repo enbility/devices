@@ -1,0 +1,77 @@
+{
+  "data": [
+    {
+      "header": [
+        {
+          "protocolId": "ee1.0"
+        }
+      ]
+    },
+    {
+      "payload": {
+        "datagram": [
+          {
+            "header": [
+              {
+                "specificationVersion": "1.1.1"
+              },
+              {
+                "addressSource": [
+                  {
+                    "device": "d:_i:42332_12345678912345678912345678A1_0"
+                  },
+                  {
+                    "entity": [
+                      0
+                    ]
+                  },
+                  {
+                    "feature": 0
+                  }
+                ]
+              },
+              {
+                "addressDestination": [
+                  {
+                    "device": "d:_i:EnbilityNet_Devices-App-123456789"
+                  },
+                  {
+                    "entity": [
+                      0
+                    ]
+                  },
+                  {
+                    "feature": 0
+                  }
+                ]
+              },
+              {
+                "msgCounter": 215
+              },
+              {
+                "cmdClassifier": "read"
+              },
+              {
+                "ackRequest": true
+              }
+            ]
+          },
+          {
+            "payload": [
+              {
+                "cmd": [
+                  [
+                    {
+                      "nodeManagementUseCaseData": []
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+
