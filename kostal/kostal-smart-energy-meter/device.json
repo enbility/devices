@@ -1,0 +1,57 @@
+{
+
+   "product":"Kostal Smart Energy Meter (KSEM)",
+
+   "updated":"07.10.2024",
+
+   "files":{
+
+      "discovery":"discovery-data.json",
+
+      "usecase":"usecase-data.json"
+
+   },
+
+   "versions":{
+
+      "firmware":"2.5.0",
+	  
+	  // how to provide
+
+      "ship":"unknown",
+
+      "spine":"unknown"
+
+   },
+
+   "devicetype":"Generic",
+   
+   "iscem": {
+     "type": "true"
+   },
+      
+   "actor": {
+     "type": "string",
+     "enum": [
+       "CEM",
+       "ControllableSystem",
+       "EnergyGuard",
+       "GridConnectionPoint",
+       "MonitoredUnit",
+       "MonitoringAppliance"
+     ]
+   }
+
+//   // how to provide more data
+//		"useCaseName":"coordinatedEvCharging"
+//		"useCaseName":"evChargingSummary"
+//		"useCaseName":"evCommissioningAndConfiguration"
+//		"useCaseName":"evseCommissioningAndConfiguration"
+//		"useCaseName":"evStateOfCharge"
+//		"useCaseName":"limitationOfPowerConsumption"
+//		"useCaseName":"measurementOfElectricityDuringEvCharging"
+//		"useCaseName":"monitoringOfGridConnectionPoint"
+//		"useCaseName":"monitoringOfPowerConsumption"
+//		"useCaseName":"optimizationOfSelfConsumptionDuringEvCharging"
+//		"useCaseName":"overloadProtectionByEvChargingCurrentCurtailment"
+}
