@@ -15,12 +15,8 @@
    "versions":{
 
       "firmware":"2.5.0",
-	  
-	  // how to provide
-
-      "ship":"unknown",
-
-      "spine":"unknown"
+	  "ship": "1.0",
+	  "spine": "1.1.1"
 
    },
 
