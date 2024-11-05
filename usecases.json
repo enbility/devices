@@ -875,7 +875,7 @@
     "short": "FLOA",
     "name": "to be added",
     "category": "HVAC",
-    "note": "Specificcation is not public yet",
+    "note": "Specification is not public yet",
     "scenarios": [
       {
         "id": 1,
@@ -894,25 +894,25 @@
   {
     "title": "Flexible Start for White Good",
     "short": "FSWG",
-    "name": "to be added",
+    "name": "flexibleStartForWhiteGoods",
     "category": "HVAC",
-    "note": "Specificcation is not public yet",
+    "note": "Specification is not public yet",
     "scenarios": [
       {
         "id": 1,
-        "title": "Unknown scenario"
+        "title": "Announcement of plan"
       },
       {
         "id": 2,
-        "title": "Unknown scenario"
+        "title": "Shift preferred power sequence"
       },
       {
         "id": 3,
-        "title": "Unknown scenario"
+        "title": "Select alternate power sequence"
       },
       {
         "id": 4,
-        "title": "Unknown scenario"
+        "title": "Configure current power sequence"
       }
     ]
   }

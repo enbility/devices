@@ -1,6 +1,7 @@
 [
   "elli/charger-connect-pro/device.json",
   "evcc.io/evcc/device.json",
+  "kostal/kostal-smart-energy-meter/device.json",
   "porsche/mobile-charger-connect/device.json",
   "sma/home-manager-2/device.json",
   "spelsberg/wallbox-smart-pro/device.json",

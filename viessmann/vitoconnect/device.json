@@ -48,6 +48,9 @@
   "features": [
     {
       "entitytype": "HeatPumpAppliance",
+      "entityid": [
+        1
+      ],
       "role": "server",
       "features": [
         {

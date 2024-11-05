@@ -1,239 +1,131 @@
 {
-  "data": [
-    {
-      "header": [
-        {
-          "protocolId": "ee1.0"
-        }
-      ]
+  "data": {
+    "header": {
+      "protocolId": "ee1.0"
     },
-    {
-      "payload": {
-        "datagram": [
-          {
-            "header": [
-              {
-                "specificationVersion": "1.1.1"
-              },
-              {
-                "addressSource": [
-                  {
-                    "device": "d:_i:19667_PorscheEVSE-00009463"
-                  },
-                  {
-                    "entity": [
-                      0
-                    ]
-                  },
-                  {
-                    "feature": 0
-                  }
-                ]
-              },
-              {
-                "addressDestination": [
-                  {
-                    "device": "d:_i:EVCC_HEMS-3ce84c490507212f"
-                  },
-                  {
-                    "entity": [
-                      0
-                    ]
-                  },
-                  {
-                    "feature": 0
-                  }
-                ]
-              },
-              {
-                "msgCounter": 13287811
-              },
-              {
-                "msgCounterReference": 11
-              },
-              {
-                "cmdClassifier": "reply"
-              }
-            ]
+    "payload": {
+      "datagram": {
+        "header": {
+          "specificationVersion": "1.1.1",
+          "addressSource": {
+            "device": "d:_i:19667_PorscheEVSE-00009463",
+            "entity": [
+              0
+            ],
+            "feature": 0
           },
-          {
-            "payload": [
-              {
-                "cmd": [
-                  [
-                    {
-                      "nodeManagementUseCaseData": [
-                        {
-                          "useCaseInformation": [
-                            [
-                              {
-                                "actor": "EV"
-                              },
-                              {
-                                "useCaseSupport": [
-                                  [
-                                    {
-                                      "useCaseName": "measurementOfElectricityDuringEvCharging"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.0"
-                                    },
-                                    {
-                                      "useCaseAvailable": true
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2,
-                                        3
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "optimizationOfSelfConsumptionDuringEvCharging"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.0"
-                                    },
-                                    {
-                                      "useCaseAvailable": true
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2,
-                                        3
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "overloadProtectionByEvChargingCurrentCurtailment"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.0"
-                                    },
-                                    {
-                                      "useCaseAvailable": true
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2,
-                                        3
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "coordinatedEvCharging"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.0"
-                                    },
-                                    {
-                                      "useCaseAvailable": true
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2,
-                                        3,
-                                        4,
-                                        5,
-                                        6,
-                                        7,
-                                        8
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "evCommissioningAndConfiguration"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.0"
-                                    },
-                                    {
-                                      "useCaseAvailable": true
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2,
-                                        3,
-                                        4,
-                                        5,
-                                        6,
-                                        7,
-                                        8
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "evseCommissioningAndConfiguration"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.0"
-                                    },
-                                    {
-                                      "useCaseAvailable": true
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "evChargingSummary"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.0"
-                                    },
-                                    {
-                                      "useCaseAvailable": true
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "evStateOfCharge"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.0"
-                                    },
-                                    {
-                                      "useCaseAvailable": true
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1
-                                      ]
-                                    }
-                                  ]
-                                ]
-                              }
-                            ]
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+          "addressDestination": {
+            "device": "d:_i:EVCC_HEMS-3ce84c490507212f",
+            "entity": [
+              0
+            ],
+            "feature": 0
+          },
+          "msgCounter": 13287811,
+          "msgCounterReference": 11,
+          "cmdClassifier": "reply"
+        },
+        "payload": {
+          "cmd": [
+            {
+              "nodeManagementUseCaseData": {
+                "useCaseInformation": [
+                  {
+                    "actor": "EV",
+                    "useCaseSupport": [
+                      {
+                        "useCaseName": "measurementOfElectricityDuringEvCharging",
+                        "useCaseVersion": "1.0.0",
+                        "useCaseAvailable": true,
+                        "scenarioSupport": [
+                          1,
+                          2,
+                          3
+                        ]
+                      },
+                      {
+                        "useCaseName": "optimizationOfSelfConsumptionDuringEvCharging",
+                        "useCaseVersion": "1.0.0",
+                        "useCaseAvailable": true,
+                        "scenarioSupport": [
+                          1,
+                          2,
+                          3
+                        ]
+                      },
+                      {
+                        "useCaseName": "overloadProtectionByEvChargingCurrentCurtailment",
+                        "useCaseVersion": "1.0.0",
+                        "useCaseAvailable": true,
+                        "scenarioSupport": [
+                          1,
+                          2,
+                          3
+                        ]
+                      },
+                      {
+                        "useCaseName": "coordinatedEvCharging",
+                        "useCaseVersion": "1.0.0",
+                        "useCaseAvailable": true,
+                        "scenarioSupport": [
+                          1,
+                          2,
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ]
+                      },
+                      {
+                        "useCaseName": "evCommissioningAndConfiguration",
+                        "useCaseVersion": "1.0.0",
+                        "useCaseAvailable": true,
+                        "scenarioSupport": [
+                          1,
+                          2,
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ]
+                      },
+                      {
+                        "useCaseName": "evseCommissioningAndConfiguration",
+                        "useCaseVersion": "1.0.0",
+                        "useCaseAvailable": true,
+                        "scenarioSupport": [
+                          1,
+                          2
+                        ]
+                      },
+                      {
+                        "useCaseName": "evChargingSummary",
+                        "useCaseVersion": "1.0.0",
+                        "useCaseAvailable": true,
+                        "scenarioSupport": [
+                          1
+                        ]
+                      },
+                      {
+                        "useCaseName": "evStateOfCharge",
+                        "useCaseVersion": "1.0.0",
+                        "useCaseAvailable": true,
+                        "scenarioSupport": [
+                          1
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
-            ]
-          }
-        ]
+            }
+          ]
+        }
       }
     }
-  ]
+  }
 }

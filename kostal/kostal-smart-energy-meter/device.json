@@ -1,313 +1,624 @@
 {
-   "product":"Kostal Smart Energy Meter (KSEM)",
-   "updated":"07.10.2024",
-   "files":{
-      "discovery":"discovery-data.json",
-      "usecase":"usecase-data.json"
+   "product": "Kostal KSEM",
+   "updated": "27.10.2024",
+   "files": {
+      "discovery": "discovery-data.json",
+      "usecase": "usecase-data.json"
    },
-   "versions":{
-      "firmware":"2.5.0",
-      "ship":"1.0",
-      "spine":"1.1.1"
+   "versions": {
+      "firmware": "2.5.0",
+      "ship": "1.0",
+      "spine": "1.3.0"
    },
-   "devicetype":"Generic",
-   "iscem":true,
-   "usecases":[
+   "devicetype": "Generic",
+   "iscem": true,
+   "usecases": [
       {
-         "name":"evseCommissioningAndConfiguration",
-         "version":"1.0.1",
-         "scenarios":[
+         "name": "evseCommissioningAndConfiguration",
+         "version": "1.0.1",
+         "scenarios": [
             {
-               "id":1
+               "id": 1
             },
             {
-               "id":2
+               "id": 2
             }
          ],
-         "actor":"CEM"
+         "actor": "CEM",
+         "entityid": [
+            1
+         ]
       },
       {
-         "name":"evCommissioningAndConfiguration",
-         "version":"1.0.1",
-         "scenarios":[
+         "name": "evCommissioningAndConfiguration",
+         "version": "1.0.1",
+         "scenarios": [
             {
-               "id":1
+               "id": 1
             },
             {
-               "id":2
+               "id": 2
             },
             {
-               "id":3
+               "id": 3
             },
             {
-               "id":4
+               "id": 4
             },
             {
-               "id":5
+               "id": 5
             },
             {
-               "id":6
+               "id": 6
             },
             {
-               "id":7
+               "id": 7
             },
             {
-               "id":8
+               "id": 8
             }
          ],
-         "actor":"CEM"
+         "actor": "CEM",
+         "entityid": [
+            1
+         ]
       },
       {
-         "name":"measurementOfElectricityDuringEvCharging",
-         "version":"1.0.1",
-         "scenarios":[
+         "name": "evChargingSummary",
+         "version": "1.0.1",
+         "scenarios": [
             {
-               "id":1
-            },
-            {
-               "id":2
-            },
-            {
-               "id":3
+               "id": 1
             }
          ],
-         "actor":"CEM"
+         "actor": "CEM",
+         "entityid": [
+            1
+         ]
       },
       {
-         "name":"overloadProtectionByEvChargingCurrentCurtailment",
-         "version":"1.0.1",
-         "scenarios":[
+         "name": "measurementOfElectricityDuringEvCharging",
+         "version": "1.0.1",
+         "scenarios": [
             {
-               "id":1
+               "id": 1
             },
             {
-               "id":2
+               "id": 2
             },
             {
-               "id":3
+               "id": 3
             }
          ],
-         "actor":"CEM"
+         "actor": "CEM",
+         "entityid": [
+            1
+         ]
       },
       {
-         "name":"optimizationOfSelfConsumptionDuringEvCharging",
-         "version":"1.0.1",
-         "scenarios":[
+         "name": "overloadProtectionByEvChargingCurrentCurtailment",
+         "version": "1.0.1",
+         "scenarios": [
             {
-               "id":1
+               "id": 1
             },
             {
-               "id":2
+               "id": 2
             },
             {
-               "id":3
+               "id": 3
             }
          ],
-         "actor":"CEM"
+         "actor": "CEM",
+         "entityid": [
+            1
+         ]
       },
       {
-         "name":"coordinatedEvCharging",
-         "version":"1.0.1",
-         "scenarios":[
+         "name": "optimizationOfSelfConsumptionDuringEvCharging",
+         "version": "1.0.1",
+         "scenarios": [
             {
-               "id":1
+               "id": 1
             },
             {
-               "id":2
+               "id": 2
             },
             {
-               "id":3
-            },
-            {
-               "id":4
-            },
-            {
-               "id":5
-            },
-            {
-               "id":6
-            },
-            {
-               "id":7
-            },
-            {
-               "id":8
+               "id": 3
             }
          ],
-         "actor":"CEM"
+         "actor": "CEM",
+         "entityid": [
+            1
+         ]
       },
       {
-         "name":"limitationOfPowerConsumption",
-         "version":"1.0.0",
-         "scenarios":[
+         "name": "coordinatedEvCharging",
+         "version": "1.0.1",
+         "scenarios": [
             {
-               "id":1
+               "id": 1
             },
             {
-               "id":2
+               "id": 2
             },
             {
-               "id":3
+               "id": 3
             },
             {
-               "id":4
+               "id": 4
+            },
+            {
+               "id": 5
+            },
+            {
+               "id": 6
+            },
+            {
+               "id": 7
+            },
+            {
+               "id": 8
             }
          ],
-         "actor":"EnergyGuard"
+         "actor": "CEM",
+         "entityid": [
+            1
+         ]
       },
       {
-         "name":"monitoringOfPowerConsumption",
-         "version":"1.0.0",
-         "scenarios":[
+         "name": "evStateOfCharge",
+         "version": "1.0.0",
+         "scenarios": [
             {
-               "id":1
+               "id": 1
             },
             {
-               "id":2
+               "id": 2
             },
             {
-               "id":3
+               "id": 3
             },
             {
-               "id":4
-            },
-            {
-               "id":5
+               "id": 4
             }
          ],
-         "actor":"MonitoringAppliance"
+         "actor": "CEM"
       },
       {
-         "name":"limitationOfPowerConsumption",
-         "version":"1.0.0",
-         "scenarios":[
+         "name": "limitationOfPowerConsumption",
+         "version": "1.0.0",
+         "scenarios": [
             {
-               "id":1
+               "id": 1
             },
             {
-               "id":2
+               "id": 2
             },
             {
-               "id":3
+               "id": 3
             },
             {
-               "id":4
+               "id": 4
             }
          ],
-         "actor":"ControllableSystem"
+         "actor": "EnergyGuard",
+         "entityid": [
+            1
+         ],
+         "notes": "This use case with the same actor is announced multiple times in different entities. The spec doesn't describe how this should be handled."
       },
       {
-         "name":"monitoringOfGridConnectionPoint",
-         "version":"1.0.0",
-         "scenarios":[
+         "name": "monitoringOfPowerConsumption",
+         "version": "1.0.0",
+         "scenarios": [
             {
-               "id":1
+               "id": 1
             },
             {
-               "id":2
+               "id": 2
             },
             {
-               "id":3
+               "id": 3
             },
             {
-               "id":4
+               "id": 4
             },
             {
-               "id":5
-            },
-            {
-               "id":6
-            },
-            {
-               "id":7
+               "id": 5
             }
          ],
-         "actor":"GridConnectionPoint"
+         "actor": "MonitoringAppliance",
+         "entityid": [
+            1
+         ],
+         "notes": "This use case with the same actor is announced multiple times in different entities. The spec doesn't describe how this should be handled."
       },
       {
-         "name":"monitoringOfPowerConsumption",
-         "version":"1.0.0",
-         "scenarios":[
+         "name": "limitationOfPowerConsumption",
+         "version": "1.0.0",
+         "scenarios": [
             {
-               "id":1
+               "id": 1
             },
             {
-               "id":2
+               "id": 2
             },
             {
-               "id":3
+               "id": 3
             },
             {
-               "id":4
-            },
-            {
-               "id":5
+               "id": 4
             }
          ],
-         "actor":"MonitoredUnit"
+         "actor": "EnergyGuard",
+         "entityid": [
+            2
+         ],
+         "notes": "This use case with the same actor is announced multiple times in different entities. The spec doesn't describe how this should be handled."
+      },
+      {
+         "name": "monitoringOfPowerConsumption",
+         "version": "1.0.0",
+         "scenarios": [
+            {
+               "id": 1
+            },
+            {
+               "id": 2
+            },
+            {
+               "id": 3
+            },
+            {
+               "id": 4
+            },
+            {
+               "id": 5
+            }
+         ],
+         "actor": "MonitoringAppliance",
+         "entityid": [
+            2
+         ],
+         "notes": "This use case with the same actor is announced multiple times in different entities. The spec doesn't describe how this should be handled."
+      },
+      {
+         "name": "limitationOfPowerConsumption",
+         "version": "1.0.0",
+         "scenarios": [
+            {
+               "id": 1
+            },
+            {
+               "id": 2
+            },
+            {
+               "id": 3
+            },
+            {
+               "id": 4
+            }
+         ],
+         "actor": "EnergyGuard",
+         "entityid": [
+            3
+         ],
+         "notes": "This use case with the same actor is announced multiple times in different entities. The spec doesn't describe how this should be handled."
+      },
+      {
+         "name": "monitoringOfPowerConsumption",
+         "version": "1.0.0",
+         "scenarios": [
+            {
+               "id": 1
+            },
+            {
+               "id": 2
+            },
+            {
+               "id": 3
+            },
+            {
+               "id": 4
+            },
+            {
+               "id": 5
+            }
+         ],
+         "actor": "MonitoringAppliance",
+         "entityid": [
+            3
+         ],
+         "notes": "This use case with the same actor is announced multiple times in different entities. The spec doesn't describe how this should be handled."
+      },
+      {
+         "name": "limitationOfPowerConsumption",
+         "version": "1.0.0",
+         "scenarios": [
+            {
+               "id": 1
+            },
+            {
+               "id": 2
+            },
+            {
+               "id": 3
+            },
+            {
+               "id": 4
+            }
+         ],
+         "actor": "EnergyGuard",
+         "entityid": [
+            4
+         ],
+         "notes": "This use case with the same actor is announced multiple times in different entities. The spec doesn't describe how this should be handled."
+      },
+      {
+         "name": "monitoringOfPowerConsumption",
+         "version": "1.0.0",
+         "scenarios": [
+            {
+               "id": 1
+            },
+            {
+               "id": 2
+            },
+            {
+               "id": 3
+            },
+            {
+               "id": 4
+            },
+            {
+               "id": 5
+            }
+         ],
+         "actor": "MonitoringAppliance",
+         "entityid": [
+            4
+         ],
+         "notes": "This use case with the same actor is announced multiple times in different entities. The spec doesn't describe how this should be handled."
+      },
+      {
+         "name": "limitationOfPowerConsumption",
+         "version": "1.0.0",
+         "scenarios": [
+            {
+               "id": 1
+            },
+            {
+               "id": 2
+            },
+            {
+               "id": 3
+            },
+            {
+               "id": 4
+            }
+         ],
+         "actor": "ControllableSystem",
+         "entityid": [
+            5
+         ]
+      },
+      {
+         "name": "monitoringOfGridConnectionPoint",
+         "version": "1.0.0",
+         "scenarios": [
+            {
+               "id": 1,
+               "invalid": true
+            },
+            {
+               "id": 2,
+               "invalid": true
+            },
+            {
+               "id": 3,
+               "invalid": true
+            },
+            {
+               "id": 4,
+               "invalid": true
+            },
+            {
+               "id": 5,
+               "invalid": true
+            },
+            {
+               "id": 6,
+               "invalid": true
+            },
+            {
+               "id": 7,
+               "invalid": true
+            }
+         ],
+         "actor": "GridConnectionPoint",
+         "entityid": [
+            6
+         ],
+         "notes": "None of the scenarios are implemented and provide any values."
+      },
+      {
+         "name": "monitoringOfPowerConsumption",
+         "version": "1.0.0",
+         "scenarios": [
+            {
+               "id": 1
+            },
+            {
+               "id": 2
+            },
+            {
+               "id": 3
+            },
+            {
+               "id": 4
+            },
+            {
+               "id": 5
+            }
+         ],
+         "actor": "MonitoredUnit",
+         "entityid": [
+            7
+         ],
+         "notes": "A CEM device may provide this use case as a monitored unit actor."
       }
    ],
-   "features":[
+   "features": [
       {
-         "entitytype":"DeviceInformation",
-         "role":"server",
-         "features":[
+         "entitytype": "CEM",
+         "entityid": [
+            1
+         ],
+         "role": "server",
+         "features": [
             {
-               "type":"DeviceClassification"
+               "type": "DeviceDiagnosis"
+            }
+         ],
+         "notes": "The same server feature is available in 4 different entities. The spec doesn't describe how this should be handled."
+      },
+      {
+         "entitytype": "CEM",
+         "entityid": [
+            2
+         ],
+         "role": "client",
+         "features": [
+            {
+               "type": "Generic"
             }
          ]
       },
       {
-         "entitytype":"CEM",
-         "role":"client",
-         "features":[
+         "entitytype": "CEM",
+         "entityid": [
+            2
+         ],
+         "role": "server",
+         "features": [
             {
-               "type":"Generic"
+               "type": "DeviceDiagnosis"
             }
          ]
       },
       {
-         "entitytype":"CEM",
-         "role":"server",
-         "features":[
+         "entitytype": "CEM",
+         "entityid": [
+            3
+         ],
+         "role": "client",
+         "features": [
             {
-               "type":"DeviceDiagnosis"
-            },
-            {
-               "type":"DeviceConfiguration"
-            },
-            {
-               "type":"ElectricalConnection"
-            },
-            {
-               "type":"LoadControl"
+               "type": "Generic"
             }
          ]
       },
       {
-         "entitytype":"GridConnectionPointOfPremises",
-         "role":"server",
-         "features":[
+         "entitytype": "CEM",
+         "entityid": [
+            3
+         ],
+         "role": "server",
+         "features": [
             {
-               "type":"ElectricalConnection"
-            },
-            {
-               "type":"Measurement"
-            },
-            {
-               "type":"DeviceConfiguration"
+               "type": "DeviceDiagnosis"
             }
          ]
       },
       {
-         "entitytype":"SubMeterElectricity",
-         "role":"server",
-         "features":[
+         "entitytype": "CEM",
+         "entityid": [
+            4
+         ],
+         "role": "client",
+         "features": [
             {
-               "type":"ElectricalConnection"
+               "type": "Generic"
+            }
+         ]
+      },
+      {
+         "entitytype": "CEM",
+         "entityid": [
+            4
+         ],
+         "role": "server",
+         "features": [
+            {
+               "type": "DeviceDiagnosis"
+            }
+         ]
+      },
+      {
+         "entitytype": "CEM",
+         "entityid": [
+            5
+         ],
+         "role": "client",
+         "features": [
+            {
+               "type": "Generic"
+            }
+         ]
+      },
+      {
+         "entitytype": "CEM",
+         "entityid": [
+            5
+         ],
+         "role": "server",
+         "features": [
+            {
+               "type": "ElectricalConnection"
             },
             {
-               "type":"Measurement"
+               "type": "LoadControl"
+            },
+            {
+               "type": "DeviceConfiguration"
+            },
+            {
+               "type": "DeviceDIagnosis"
+            }
+         ]
+      },
+      {
+         "entitytype": "GridConnectionPointOfPremises",
+         "entityid": [
+            6
+         ],
+         "role": "server",
+         "features": [
+            {
+               "type": "ElectricalConnection"
+            },
+            {
+               "type": "Measurement"
+            },
+            {
+               "type": "DeviceConfiguration"
+            }
+         ]
+      },
+      {
+         "entitytype": "CEM",
+         "entityid": [
+            7
+         ],
+         "role": "server",
+         "features": [
+            {
+               "type": "ElectricalConnection"
+            },
+            {
+               "type": "Measurement"
             }
          ]
       }

@@ -172,6 +172,9 @@
   "features": [
     {
       "entitytype": "EVSE",
+      "entityid": [
+        1
+      ],
       "role": "server",
       "features": [
         {
@@ -189,6 +192,10 @@
     },
     {
       "entitytype": "EV",
+      "entityid": [
+        1,
+        1
+      ],
       "role": "server",
       "features": [
         {
@@ -226,6 +233,10 @@
     },
     {
       "entitytype": "EV",
+      "entityid": [
+        1,
+        1
+      ],
       "role": "client",
       "features": [
         {

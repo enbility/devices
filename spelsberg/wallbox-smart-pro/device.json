@@ -1,235 +1,246 @@
 {
-    "product": "Spelsberg Wallbox Smart Pro",
-    "updated": "15.05.2023",
-    "files": {
-        "discovery": "discovery-data.json",
-        "usecase": "usecase-data.json"
-    },
-    "versions": {
-        "firmware": "5.30.0-15956",
-        "ship": "1.0",
-        "spine": "1.3.0"
-    },
-    "devicetype": "Generic",
-    "usecases": [
+  "product": "Spelsberg Wallbox Smart Pro",
+  "updated": "15.05.2023",
+  "files": {
+    "discovery": "discovery-data.json",
+    "usecase": "usecase-data.json"
+  },
+  "versions": {
+    "firmware": "5.30.0-15956",
+    "ship": "1.0",
+    "spine": "1.3.0"
+  },
+  "devicetype": "Generic",
+  "usecases": [
+    {
+      "name": "overloadProtectionByEvChargingCurrentCurtailment",
+      "version": "1.0.1",
+      "scenarios": [
         {
-            "name": "overloadProtectionByEvChargingCurrentCurtailment",
-            "version": "1.0.1",
-            "scenarios": [
-                {
-                    "id": 1
-                },
-                {
-                    "id": 2
-                },
-                {
-                    "id": 3
-                }
-            ],
-            "actor": "EV"
+          "id": 1
         },
         {
-            "name": "evCommissioningAndConfiguration",
-            "version": "1.0.1",
-            "scenarios": [
-                {
-                    "id": 1
-                },
-                {
-                    "id": 2,
-                    "invalid": true
-                },
-                {
-                    "id": 3,
-                    "invalid": true
-                },
-                {
-                    "id": 4,
-                    "invalid": true
-                },
-                {
-                    "id": 5,
-                    "invalid": true
-                },
-                {
-                    "id": 6,
-                    "invalid": true
-                },
-                {
-                    "id": 7
-                },
-                {
-                    "id": 8
-                }
-            ],
-            "actor": "EV",
-            "notes": "ISO15118 scenarios (3-6) are reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
+          "id": 2
         },
         {
-            "name": "measurementOfElectricityDuringEvCharging",
-            "version": "1.0.1",
-            "scenarios": [
-                {
-                    "id": 1
-                },
-                {
-                    "id": 2
-                },
-                {
-                    "id": 3
-                }
-            ],
-            "actor": "EV"
-        },
-        {
-            "name": "optimizationOfSelfConsumptionDuringEvCharging",
-            "version": "1.0.1",
-            "scenarios": [
-                {
-                    "id": 1,
-                    "invalid": true
-                },
-                {
-                    "id": 2,
-                    "invalid": true
-                },
-                {
-                    "id": 3,
-                    "invalid": true
-                }
-            ],
-            "actor": "EV",
-            "invalid": true,
-            "notes": "ISO15118 scenarios (1, 2, 3) are reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
-        },
-        {
-            "name": "coordinatedEvCharging",
-            "version": "1.0.1",
-            "scenarios": [
-                {
-                    "id": 1,
-                    "invalid": true
-                },
-                {
-                    "id": 2,
-                    "invalid": true
-                },
-                {
-                    "id": 3,
-                    "invalid": true
-                },
-                {
-                    "id": 4,
-                    "invalid": true
-                },
-                {
-                    "id": 5,
-                    "invalid": true
-                },
-                {
-                    "id": 6,
-                    "invalid": true
-                },
-                {
-                    "id": 7,
-                    "invalid": true
-                },
-                {
-                    "id": 8,
-                    "invalid": true
-                }
-            ],
-            "actor": "EV",
-            "invalid": true,
-            "notes": "ISO15118 scenarios (1-8) are reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
-        },
-        {
-            "name": "evseCommissioningAndConfiguration",
-            "version": "1.0.1",
-            "scenarios": [
-                {
-                    "id": 1
-                },
-                {
-                    "id": 2
-                }
-            ],
-            "actor": "EVSE"
-        },
-        {
-            "name": "evChargingSummary",
-            "version": "1.0.1",
-            "scenarios": [
-                {
-                    "id": 1
-                }
-            ],
-            "actor": "EVSE",
-            "invalid": true,
-            "notes": "ISO15118 scenario (1) is reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
+          "id": 3
         }
-    ],
-    "features": [
+      ],
+      "actor": "EV"
+    },
+    {
+      "name": "evCommissioningAndConfiguration",
+      "version": "1.0.1",
+      "scenarios": [
         {
-            "entitytype": "EVSE",
-            "role": "server",
-            "features": [
-                {
-                    "type": "DeviceClassification"
-                },
-                {
-                    "type": "Bill"
-                },
-                {
-                    "type": "DeviceDiagnosis"
-                }
-            ]
+          "id": 1
         },
         {
-            "entitytype": "EV",
-            "role": "server",
-            "features": [
-                {
-                    "type": "DeviceClassification"
-                },
-                {
-                    "type": "DeviceDiagnosis"
-                },
-                {
-                    "type": "ElectricalConnection"
-                },
-                {
-                    "type": "LoadControl"
-                },
-                {
-                    "type": "Measurement"
-                },
-                {
-                    "type": "DeviceConfiguration"
-                },
-                {
-                    "type": "TimeSeries",
-                    "invalid": true
-                },
-                {
-                    "type": "IncentiveTable",
-                    "invalid": true
-                },
-                {
-                    "type": "Identification",
-                    "invalid": true
-                }
-            ],
-            "notes": "The features \"TimeSeries\", \"IncentiveTable\", and \"Identification\" require the EV to communicate via ISO15118, which is disabled in the device setup and no compatible EV was connected anyway."
+          "id": 2,
+          "invalid": true
         },
         {
-            "entitytype": "EV",
-            "role": "client",
-            "features": [
-                {
-                    "type": "Generic"
-                }
-            ]
+          "id": 3,
+          "invalid": true
+        },
+        {
+          "id": 4,
+          "invalid": true
+        },
+        {
+          "id": 5,
+          "invalid": true
+        },
+        {
+          "id": 6,
+          "invalid": true
+        },
+        {
+          "id": 7
+        },
+        {
+          "id": 8
         }
-    ]
+      ],
+      "actor": "EV",
+      "notes": "ISO15118 scenarios (3-6) are reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
+    },
+    {
+      "name": "measurementOfElectricityDuringEvCharging",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "actor": "EV"
+    },
+    {
+      "name": "optimizationOfSelfConsumptionDuringEvCharging",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1,
+          "invalid": true
+        },
+        {
+          "id": 2,
+          "invalid": true
+        },
+        {
+          "id": 3,
+          "invalid": true
+        }
+      ],
+      "actor": "EV",
+      "invalid": true,
+      "notes": "ISO15118 scenarios (1, 2, 3) are reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
+    },
+    {
+      "name": "coordinatedEvCharging",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1,
+          "invalid": true
+        },
+        {
+          "id": 2,
+          "invalid": true
+        },
+        {
+          "id": 3,
+          "invalid": true
+        },
+        {
+          "id": 4,
+          "invalid": true
+        },
+        {
+          "id": 5,
+          "invalid": true
+        },
+        {
+          "id": 6,
+          "invalid": true
+        },
+        {
+          "id": 7,
+          "invalid": true
+        },
+        {
+          "id": 8,
+          "invalid": true
+        }
+      ],
+      "actor": "EV",
+      "invalid": true,
+      "notes": "ISO15118 scenarios (1-8) are reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
+    },
+    {
+      "name": "evseCommissioningAndConfiguration",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
+      ],
+      "actor": "EVSE"
+    },
+    {
+      "name": "evChargingSummary",
+      "version": "1.0.1",
+      "scenarios": [
+        {
+          "id": 1
+        }
+      ],
+      "actor": "EVSE",
+      "invalid": true,
+      "notes": "ISO15118 scenario (1) is reported as being supported, even though there is no ISO15118 EV connected and the ISO15118 support turned off."
+    }
+  ],
+  "features": [
+    {
+      "entitytype": "EVSE",
+      "entityid": [
+        1
+      ],
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        },
+        {
+          "type": "Bill"
+        },
+        {
+          "type": "DeviceDiagnosis"
+        }
+      ]
+    },
+    {
+      "entitytype": "EV",
+      "entityid": [
+        1,
+        1
+      ],
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceClassification"
+        },
+        {
+          "type": "DeviceDiagnosis"
+        },
+        {
+          "type": "ElectricalConnection"
+        },
+        {
+          "type": "LoadControl"
+        },
+        {
+          "type": "Measurement"
+        },
+        {
+          "type": "DeviceConfiguration"
+        },
+        {
+          "type": "TimeSeries",
+          "invalid": true
+        },
+        {
+          "type": "IncentiveTable",
+          "invalid": true
+        },
+        {
+          "type": "Identification",
+          "invalid": true
+        }
+      ],
+      "notes": "The features \"TimeSeries\", \"IncentiveTable\", and \"Identification\" require the EV to communicate via ISO15118, which is disabled in the device setup and no compatible EV was connected anyway."
+    },
+    {
+      "entitytype": "EV",
+      "entityid": [
+        1,
+        1
+      ],
+      "role": "client",
+      "features": [
+        {
+          "type": "Generic"
+        }
+      ]
+    }
+  ]
 }

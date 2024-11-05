@@ -1,591 +1,287 @@
 {
-  "data": [
-    {
-      "header": [
-        {
-          "protocolId": "ee1.0"
-        }
-      ]
+  "data": {
+    "header": {
+      "protocolId": "ee1.0"
     },
-    {
-      "payload": {
-        "datagram": [
-          {
-            "header": [
-              {
-                "specificationVersion": "1.1.1"
-              },
-              {
-                "addressSource": [
-                  {
-                    "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                  },
-                  {
-                    "entity": [
-                      0
-                    ]
-                  },
-                  {
-                    "feature": 0
-                  }
-                ]
-              },
-              {
-                "addressDestination": [
-                  {
-                    "device": "d:_i:19667_PorscheEVSE-xxxxxxxx"
-                  },
-                  {
-                    "entity": [
-                      0
-                    ]
-                  },
-                  {
-                    "feature": 0
-                  }
-                ]
-              },
-              {
-                "msgCounter": 2
-              },
-              {
-                "msgCounterReference": 10704465
-              },
-              {
-                "cmdClassifier": "reply"
-              }
-            ]
+    "payload": {
+      "datagram": {
+        "header": {
+          "specificationVersion": "1.1.1",
+          "addressSource": {
+            "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+            "entity": [
+              0
+            ],
+            "feature": 0
           },
-          {
-            "payload": [
-              {
-                "cmd": [
-                  [
-                    {
-                      "nodeManagementDetailedDiscoveryData": [
+          "addressDestination": {
+            "device": "d:_i:19667_PorscheEVSE-xxxxxxxx",
+            "entity": [
+              0
+            ],
+            "feature": 0
+          },
+          "msgCounter": 2,
+          "msgCounterReference": 10704465,
+          "cmdClassifier": "reply"
+        },
+        "payload": {
+          "cmd": [
+            {
+              "nodeManagementDetailedDiscoveryData": {
+                "specificationVersionList": {
+                  "specificationVersion": [
+                    "1.1.1"
+                  ]
+                },
+                "deviceInformation": {
+                  "description": {
+                    "deviceAddress": {
+                      "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
+                    },
+                    "deviceType": "EnergyManagementSystem",
+                    "networkFeatureSet": "smart"
+                  }
+                },
+                "entityInformation": [
+                  {
+                    "description": {
+                      "entityAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          0
+                        ]
+                      },
+                      "entityType": "DeviceInformation"
+                    }
+                  },
+                  {
+                    "description": {
+                      "entityAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          1
+                        ]
+                      },
+                      "entityType": "CEM"
+                    }
+                  }
+                ],
+                "featureInformation": [
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          0
+                        ],
+                        "feature": 0
+                      },
+                      "featureType": "NodeManagement",
+                      "role": "special",
+                      "supportedFunction": [
                         {
-                          "specificationVersionList": [
-                            {
-                              "specificationVersion": [
-                                "1.1.1"
-                              ]
-                            }
-                          ]
+                          "function": "nodeManagementDestinationListData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
                         },
                         {
-                          "deviceInformation": [
-                            {
-                              "description": [
-                                {
-                                  "deviceAddress": [
-                                    {
-                                      "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "deviceType": "EnergyManagementSystem"
-                                },
-                                {
-                                  "networkFeatureSet": "smart"
-                                }
-                              ]
-                            }
-                          ]
+                          "function": "nodeManagementDetailedDiscoveryData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
                         },
                         {
-                          "entityInformation": [
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "entityAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          0
-                                        ]
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "entityType": "DeviceInformation"
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "entityAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "entityType": "CEM"
-                                  }
-                                ]
-                              }
-                            ]
-                          ]
+                          "function": "nodeManagementSubscriptionData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
                         },
                         {
-                          "featureInformation": [
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          0
-                                        ]
-                                      },
-                                      {
-                                        "feature": 0
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "NodeManagement"
-                                  },
-                                  {
-                                    "role": "special"
-                                  },
-                                  {
-                                    "supportedFunction": [
-                                      [
-                                        {
-                                          "function": "nodeManagementDestinationListData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementDetailedDiscoveryData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementSubscriptionData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementSubscriptionRequestCall"
-                                        },
-                                        {
-                                          "possibleOperations": []
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementBindingData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementBindingRequestCall"
-                                        },
-                                        {
-                                          "possibleOperations": []
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementUseCaseData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementSubscriptionDeleteCall"
-                                        },
-                                        {
-                                          "possibleOperations": []
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementBindingDeleteCall"
-                                        },
-                                        {
-                                          "possibleOperations": []
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          0
-                                        ]
-                                      },
-                                      {
-                                        "feature": 1
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "DeviceClassification"
-                                  },
-                                  {
-                                    "role": "server"
-                                  },
-                                  {
-                                    "supportedFunction": [
-                                      [
-                                        {
-                                          "function": "deviceClassificationManufacturerData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 1
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "DeviceDiagnosis"
-                                  },
-                                  {
-                                    "role": "server"
-                                  },
-                                  {
-                                    "supportedFunction": [
-                                      [
-                                        {
-                                          "function": "deviceDiagnosisStateData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "deviceDiagnosisHeartbeatData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    ]
-                                  },
-                                  {
-                                    "description": "DeviceDiagnosis Server"
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 2
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "DeviceDiagnosis"
-                                  },
-                                  {
-                                    "role": "client"
-                                  },
-                                  {
-                                    "description": "DeviceDiagnosis Client"
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 3
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "DeviceClassification"
-                                  },
-                                  {
-                                    "role": "client"
-                                  },
-                                  {
-                                    "description": "DeviceClassification Client"
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 4
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "DeviceConfiguration"
-                                  },
-                                  {
-                                    "role": "client"
-                                  },
-                                  {
-                                    "description": "DeviceConfiguration Client"
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 5
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "ElectricalConnection"
-                                  },
-                                  {
-                                    "role": "client"
-                                  },
-                                  {
-                                    "description": "ElectricalConnection Client"
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 6
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "Measurement"
-                                  },
-                                  {
-                                    "role": "client"
-                                  },
-                                  {
-                                    "description": "Measurement Client"
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 7
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "LoadControl"
-                                  },
-                                  {
-                                    "role": "client"
-                                  },
-                                  {
-                                    "description": "LoadControl Client"
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                                      },
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 8
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "Identification"
-                                  },
-                                  {
-                                    "role": "client"
-                                  },
-                                  {
-                                    "description": "Identification Client"
-                                  }
-                                ]
-                              }
-                            ]
-                          ]
+                          "function": "nodeManagementSubscriptionRequestCall",
+                          "possibleOperations": {}
+                        },
+                        {
+                          "function": "nodeManagementBindingData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
+                        },
+                        {
+                          "function": "nodeManagementBindingRequestCall",
+                          "possibleOperations": {}
+                        },
+                        {
+                          "function": "nodeManagementUseCaseData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
+                        },
+                        {
+                          "function": "nodeManagementSubscriptionDeleteCall",
+                          "possibleOperations": {}
+                        },
+                        {
+                          "function": "nodeManagementBindingDeleteCall",
+                          "possibleOperations": {}
                         }
                       ]
                     }
-                  ]
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          0
+                        ],
+                        "feature": 1
+                      },
+                      "featureType": "DeviceClassification",
+                      "role": "server",
+                      "supportedFunction": [
+                        {
+                          "function": "deviceClassificationManufacturerData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          1
+                        ],
+                        "feature": 1
+                      },
+                      "featureType": "DeviceDiagnosis",
+                      "role": "server",
+                      "supportedFunction": [
+                        {
+                          "function": "deviceDiagnosisStateData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
+                        },
+                        {
+                          "function": "deviceDiagnosisHeartbeatData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
+                        }
+                      ],
+                      "description": "DeviceDiagnosis Server"
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          1
+                        ],
+                        "feature": 2
+                      },
+                      "featureType": "DeviceDiagnosis",
+                      "role": "client",
+                      "description": "DeviceDiagnosis Client"
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          1
+                        ],
+                        "feature": 3
+                      },
+                      "featureType": "DeviceClassification",
+                      "role": "client",
+                      "description": "DeviceClassification Client"
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          1
+                        ],
+                        "feature": 4
+                      },
+                      "featureType": "DeviceConfiguration",
+                      "role": "client",
+                      "description": "DeviceConfiguration Client"
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          1
+                        ],
+                        "feature": 5
+                      },
+                      "featureType": "ElectricalConnection",
+                      "role": "client",
+                      "description": "ElectricalConnection Client"
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          1
+                        ],
+                        "feature": 6
+                      },
+                      "featureType": "Measurement",
+                      "role": "client",
+                      "description": "Measurement Client"
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          1
+                        ],
+                        "feature": 7
+                      },
+                      "featureType": "LoadControl",
+                      "role": "client",
+                      "description": "LoadControl Client"
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+                        "entity": [
+                          1
+                        ],
+                        "feature": 8
+                      },
+                      "featureType": "Identification",
+                      "role": "client",
+                      "description": "Identification Client"
+                    }
+                  }
                 ]
               }
-            ]
-          }
-        ]
+            }
+          ]
+        }
       }
     }
-  ]
+  }
 }

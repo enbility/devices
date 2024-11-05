@@ -1,521 +1,261 @@
 {
-  "data": [
-    {
-      "header": [
-        {
-          "protocolId": "ee1.0"
-        }
-      ]
+  "data": {
+    "header": {
+      "protocolId": "ee1.0"
     },
-    {
-      "payload": {
-        "datagram": [
-          {
-            "header": [
-              {
-                "specificationVersion": "1.2.0"
-              },
-              {
-                "addressSource": [
-                  {
-                    "device": "d:_i:21381_Heatbox2-xxxxxx"
-                  },
-                  {
-                    "entity": [
-                      0
-                    ]
-                  },
-                  {
-                    "feature": 0
-                  }
-                ]
-              },
-              {
-                "addressDestination": [
-                  {
-                    "device": "EVCC_HEMS"
-                  },
-                  {
-                    "entity": [
-                      0
-                    ]
-                  },
-                  {
-                    "feature": 0
-                  }
-                ]
-              },
-              {
-                "msgCounter": 99
-              },
-              {
-                "msgCounterReference": 1
-              },
-              {
-                "cmdClassifier": "reply"
-              }
-            ]
+    "payload": {
+      "datagram": {
+        "header": {
+          "specificationVersion": "1.2.0",
+          "addressSource": {
+            "device": "d:_i:21381_Heatbox2-xxxxxx",
+            "entity": [
+              0
+            ],
+            "feature": 0
           },
-          {
-            "payload": [
-              {
-                "cmd": [
-                  [
-                    {
-                      "nodeManagementDetailedDiscoveryData": [
+          "addressDestination": {
+            "device": "EVCC_HEMS",
+            "entity": [
+              0
+            ],
+            "feature": 0
+          },
+          "msgCounter": 99,
+          "msgCounterReference": 1,
+          "cmdClassifier": "reply"
+        },
+        "payload": {
+          "cmd": [
+            {
+              "nodeManagementDetailedDiscoveryData": {
+                "specificationVersionList": {
+                  "specificationVersion": [
+                    "1.2.0"
+                  ]
+                },
+                "deviceInformation": {
+                  "description": {
+                    "deviceAddress": {
+                      "device": "d:_i:21381_Heatbox2-xxxxxx"
+                    },
+                    "deviceType": "Generic",
+                    "networkFeatureSet": "smart",
+                    "lastStateChange": "added"
+                  }
+                },
+                "entityInformation": [
+                  {
+                    "description": {
+                      "entityAddress": {
+                        "entity": [
+                          0
+                        ]
+                      },
+                      "entityType": "DeviceInformation"
+                    }
+                  },
+                  {
+                    "description": {
+                      "entityAddress": {
+                        "entity": [
+                          1
+                        ]
+                      },
+                      "entityType": "HeatPumpAppliance"
+                    }
+                  }
+                ],
+                "featureInformation": [
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "entity": [
+                          0
+                        ],
+                        "feature": 0
+                      },
+                      "featureType": "NodeManagement",
+                      "role": "special",
+                      "supportedFunction": [
                         {
-                          "specificationVersionList": [
-                            {
-                              "specificationVersion": [
-                                "1.2.0"
-                              ]
-                            }
-                          ]
+                          "function": "nodeManagementBindingData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
                         },
                         {
-                          "deviceInformation": [
-                            {
-                              "description": [
-                                {
-                                  "deviceAddress": [
-                                    {
-                                      "device": "d:_i:21381_Heatbox2-xxxxxx"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "deviceType": "Generic"
-                                },
-                                {
-                                  "networkFeatureSet": "smart"
-                                },
-                                {
-                                  "lastStateChange": "added"
-                                }
-                              ]
-                            }
-                          ]
+                          "function": "nodeManagementBindingDeleteCall",
+                          "possibleOperations": {}
                         },
                         {
-                          "entityInformation": [
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "entityAddress": [
-                                      {
-                                        "entity": [
-                                          0
-                                        ]
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "entityType": "DeviceInformation"
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "entityAddress": [
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "entityType": "HeatPumpAppliance"
-                                  }
-                                ]
-                              }
-                            ]
-                          ]
+                          "function": "nodeManagementBindingRequestCall",
+                          "possibleOperations": {}
                         },
                         {
-                          "featureInformation": [
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "entity": [
-                                          0
-                                        ]
-                                      },
-                                      {
-                                        "feature": 0
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "NodeManagement"
-                                  },
-                                  {
-                                    "role": "special"
-                                  },
-                                  {
-                                    "supportedFunction": [
-                                      [
-                                        {
-                                          "function": "nodeManagementBindingData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementBindingDeleteCall"
-                                        },
-                                        {
-                                          "possibleOperations": []
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementBindingRequestCall"
-                                        },
-                                        {
-                                          "possibleOperations": []
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementDetailedDiscoveryData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementSubscriptionData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementSubscriptionDeleteCall"
-                                        },
-                                        {
-                                          "possibleOperations": []
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementSubscriptionRequestCall"
-                                        },
-                                        {
-                                          "possibleOperations": []
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "nodeManagementUseCaseData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "entity": [
-                                          0
-                                        ]
-                                      },
-                                      {
-                                        "feature": 1
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "DeviceClassification"
-                                  },
-                                  {
-                                    "role": "server"
-                                  },
-                                  {
-                                    "supportedFunction": [
-                                      [
-                                        {
-                                          "function": "deviceClassificationManufacturerData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": []
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 7
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "ElectricalConnection"
-                                  },
-                                  {
-                                    "role": "server"
-                                  },
-                                  {
-                                    "supportedFunction": [
-                                      [
-                                        {
-                                          "function": "electricalConnectionDescriptionListData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": [
-                                                {
-                                                  "partial": []
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "electricalConnectionParameterDescriptionListData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": [
-                                                {
-                                                  "partial": []
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 9
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "HVAC"
-                                  },
-                                  {
-                                    "role": "server"
-                                  },
-                                  {
-                                    "supportedFunction": [
-                                      [
-                                        {
-                                          "function": "hvacOverrunDescriptionListData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": [
-                                                {
-                                                  "partial": []
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "hvacOverrunListData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": [
-                                                {
-                                                  "partial": []
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "write": [
-                                                {
-                                                  "partial": []
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "hvacSystemFunctionDescriptionListData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": [
-                                                {
-                                                  "partial": []
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                ]
-                              }
-                            ],
-                            [
-                              {
-                                "description": [
-                                  {
-                                    "featureAddress": [
-                                      {
-                                        "entity": [
-                                          1
-                                        ]
-                                      },
-                                      {
-                                        "feature": 11
-                                      }
-                                    ]
-                                  },
-                                  {
-                                    "featureType": "Measurement"
-                                  },
-                                  {
-                                    "role": "server"
-                                  },
-                                  {
-                                    "supportedFunction": [
-                                      [
-                                        {
-                                          "function": "measurementConstraintsListData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": [
-                                                {
-                                                  "partial": []
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "measurementDescriptionListData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": [
-                                                {
-                                                  "partial": []
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "function": "measurementListData"
-                                        },
-                                        {
-                                          "possibleOperations": [
-                                            {
-                                              "read": [
-                                                {
-                                                  "partial": []
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                ]
-                              }
-                            ]
-                          ]
+                          "function": "nodeManagementDetailedDiscoveryData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
+                        },
+                        {
+                          "function": "nodeManagementSubscriptionData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
+                        },
+                        {
+                          "function": "nodeManagementSubscriptionDeleteCall",
+                          "possibleOperations": {}
+                        },
+                        {
+                          "function": "nodeManagementSubscriptionRequestCall",
+                          "possibleOperations": {}
+                        },
+                        {
+                          "function": "nodeManagementUseCaseData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
                         }
                       ]
                     }
-                  ]
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "entity": [
+                          0
+                        ],
+                        "feature": 1
+                      },
+                      "featureType": "DeviceClassification",
+                      "role": "server",
+                      "supportedFunction": [
+                        {
+                          "function": "deviceClassificationManufacturerData",
+                          "possibleOperations": {
+                            "read": {}
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "entity": [
+                          1
+                        ],
+                        "feature": 7
+                      },
+                      "featureType": "ElectricalConnection",
+                      "role": "server",
+                      "supportedFunction": [
+                        {
+                          "function": "electricalConnectionDescriptionListData",
+                          "possibleOperations": {
+                            "read": {
+                              "partial": {}
+                            }
+                          }
+                        },
+                        {
+                          "function": "electricalConnectionParameterDescriptionListData",
+                          "possibleOperations": {
+                            "read": {
+                              "partial": {}
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "entity": [
+                          1
+                        ],
+                        "feature": 9
+                      },
+                      "featureType": "HVAC",
+                      "role": "server",
+                      "supportedFunction": [
+                        {
+                          "function": "hvacOverrunDescriptionListData",
+                          "possibleOperations": {
+                            "read": {
+                              "partial": {}
+                            }
+                          }
+                        },
+                        {
+                          "function": "hvacOverrunListData",
+                          "possibleOperations": {
+                            "read": {
+                              "partial": {}
+                            },
+                            "write": {
+                              "partial": {}
+                            }
+                          }
+                        },
+                        {
+                          "function": "hvacSystemFunctionDescriptionListData",
+                          "possibleOperations": {
+                            "read": {
+                              "partial": {}
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "description": {
+                      "featureAddress": {
+                        "entity": [
+                          1
+                        ],
+                        "feature": 11
+                      },
+                      "featureType": "Measurement",
+                      "role": "server",
+                      "supportedFunction": [
+                        {
+                          "function": "measurementConstraintsListData",
+                          "possibleOperations": {
+                            "read": {
+                              "partial": {}
+                            }
+                          }
+                        },
+                        {
+                          "function": "measurementDescriptionListData",
+                          "possibleOperations": {
+                            "read": {
+                              "partial": {}
+                            }
+                          }
+                        },
+                        {
+                          "function": "measurementListData",
+                          "possibleOperations": {
+                            "read": {
+                              "partial": {}
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
                 ]
               }
-            ]
-          }
-        ]
+            }
+          ]
+        }
       }
     }
-  ]
+  }
 }

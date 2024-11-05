@@ -1,185 +1,105 @@
 {
-  "data": [
-    {
-      "header": [
-        {
-          "protocolId": "ee1.0"
-        }
-      ]
+  "data": {
+    "header": {
+      "protocolId": "ee1.0"
     },
-    {
-      "payload": {
-        "datagram": [
-          {
-            "header": [
-              {
-                "specificationVersion": "1.1.1"
-              },
-              {
-                "addressSource": [
-                  {
-                    "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx"
-                  },
-                  {
-                    "entity": [
-                      0
-                    ]
-                  },
-                  {
-                    "feature": 0
-                  }
-                ]
-              },
-              {
-                "addressDestination": [
-                  {
-                    "device": "d:_i:19667_PorscheEVSE-xxxxxxxx"
-                  },
-                  {
-                    "entity": [
-                      0
-                    ]
-                  },
-                  {
-                    "feature": 0
-                  }
-                ]
-              },
-              {
-                "msgCounter": 9
-              },
-              {
-                "msgCounterReference": 589927
-              },
-              {
-                "cmdClassifier": "reply"
-              }
-            ]
+    "payload": {
+      "datagram": {
+        "header": {
+          "specificationVersion": "1.1.1",
+          "addressSource": {
+            "device": "d:_i:EVCC_HEMS-xxxxxxxxxxxxxxxx",
+            "entity": [
+              0
+            ],
+            "feature": 0
           },
-          {
-            "payload": [
-              {
-                "cmd": [
-                  [
-                    {
-                      "nodeManagementUseCaseData": [
-                        {
-                          "useCaseInformation": [
-                            [
-                              {
-                                "actor": "CEM"
-                              },
-                              {
-                                "useCaseSupport": [
-                                  [
-                                    {
-                                      "useCaseName": "evseCommissioningAndConfiguration"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.1"
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "evCommissioningAndConfiguration"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.1"
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2,
-                                        3,
-                                        4,
-                                        5,
-                                        6,
-                                        7,
-                                        8
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "measurementOfElectricityDuringEvCharging"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.1"
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2,
-                                        3
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "overloadProtectionByEvChargingCurrentCurtailment"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.1b"
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2,
-                                        3
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "evStateOfCharge"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.0"
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2,
-                                        3,
-                                        4
-                                      ]
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "useCaseName": "optimizationOfSelfConsumptionDuringEvCharging"
-                                    },
-                                    {
-                                      "useCaseVersion": "1.0.1b"
-                                    },
-                                    {
-                                      "scenarioSupport": [
-                                        1,
-                                        2,
-                                        3
-                                      ]
-                                    }
-                                  ]
-                                ]
-                              }
-                            ]
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+          "addressDestination": {
+            "device": "d:_i:19667_PorscheEVSE-xxxxxxxx",
+            "entity": [
+              0
+            ],
+            "feature": 0
+          },
+          "msgCounter": 9,
+          "msgCounterReference": 589927,
+          "cmdClassifier": "reply"
+        },
+        "payload": {
+          "cmd": [
+            {
+              "nodeManagementUseCaseData": {
+                "useCaseInformation": [
+                  {
+                    "actor": "CEM",
+                    "useCaseSupport": [
+                      {
+                        "useCaseName": "evseCommissioningAndConfiguration",
+                        "useCaseVersion": "1.0.1",
+                        "scenarioSupport": [
+                          1,
+                          2
+                        ]
+                      },
+                      {
+                        "useCaseName": "evCommissioningAndConfiguration",
+                        "useCaseVersion": "1.0.1",
+                        "scenarioSupport": [
+                          1,
+                          2,
+                          3,
+                          4,
+                          5,
+                          6,
+                          7,
+                          8
+                        ]
+                      },
+                      {
+                        "useCaseName": "measurementOfElectricityDuringEvCharging",
+                        "useCaseVersion": "1.0.1",
+                        "scenarioSupport": [
+                          1,
+                          2,
+                          3
+                        ]
+                      },
+                      {
+                        "useCaseName": "overloadProtectionByEvChargingCurrentCurtailment",
+                        "useCaseVersion": "1.0.1b",
+                        "scenarioSupport": [
+                          1,
+                          2,
+                          3
+                        ]
+                      },
+                      {
+                        "useCaseName": "evStateOfCharge",
+                        "useCaseVersion": "1.0.0",
+                        "scenarioSupport": [
+                          1,
+                          2,
+                          3,
+                          4
+                        ]
+                      },
+                      {
+                        "useCaseName": "optimizationOfSelfConsumptionDuringEvCharging",
+                        "useCaseVersion": "1.0.1b",
+                        "scenarioSupport": [
+                          1,
+                          2,
+                          3
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
-            ]
-          }
-        ]
+            }
+          ]
+        }
       }
     }
-  ]
+  }
 }

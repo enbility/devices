@@ -129,6 +129,9 @@
   "features": [
     {
       "entitytype": "CEM",
+      "entityid": [
+        1
+      ],
       "role": "server",
       "features": [
         {
@@ -141,6 +144,9 @@
     },
     {
       "entitytype": "CEM",
+      "entityid": [
+        1
+      ],
       "role": "client",
       "features": [
         {

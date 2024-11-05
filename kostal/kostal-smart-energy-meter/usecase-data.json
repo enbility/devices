@@ -1,849 +1,460 @@
 {
-   "data":[
-      {
-         "header":[
-            {
-               "protocolId":"ee1.0"
-            }
-         ]
-      },
-      {
-         "payload":{
-            "datagram":[
-               {
-                  "header":[
-                     {
-                        "specificationVersion":"1.3.0"
+   "data": {
+     "header": {
+       "protocolId": "ee1.0"
+     },
+     "payload": {
+       "datagram": {
+         "header": {
+           "specificationVersion": "1.3.0",
+           "addressSource": {
+             "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+             "entity": [
+               0
+             ],
+             "feature": 0
+           },
+           "addressDestination": {
+             "device": "d:_n:Demo_HEMS-123456789",
+             "entity": [
+               0
+             ],
+             "feature": 0
+           },
+           "msgCounter": 278561,
+           "msgCounterReference": 4,
+           "cmdClassifier": "reply"
+         },
+         "payload": {
+           "cmd": [
+             {
+               "nodeManagementUseCaseData": {
+                 "useCaseInformation": [
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         1
+                       ]
                      },
-                     {
-                        "addressSource":[
-                           {
-                              "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                           },
-                           {
-                              "entity":[
-                                 0
-                              ]
-                           },
-                           {
-                              "feature":0
-                           }
-                        ]
+                     "actor": "CEM",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "evseCommissioningAndConfiguration",
+                         "useCaseVersion": "1.0.1",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "evChargingSummary",
+                         "useCaseVersion": "1.0.1",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "evCommissioningAndConfiguration",
+                         "useCaseVersion": "1.0.1",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4,
+                           5,
+                           6,
+                           7,
+                           8
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "measurementOfElectricityDuringEvCharging",
+                         "useCaseVersion": "1.0.1",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "overloadProtectionByEvChargingCurrentCurtailment",
+                         "useCaseVersion": "1.0.1",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "optimizationOfSelfConsumptionDuringEvCharging",
+                         "useCaseVersion": "1.0.1",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "coordinatedEvCharging",
+                         "useCaseVersion": "1.0.1",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4,
+                           5,
+                           6,
+                           7,
+                           8
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         1
+                       ]
                      },
-                     {
-                        "addressDestination":[
-                           {
-                              "device":"d:_n:Demo_HEMS-123456789"
-                           },
-                           {
-                              "entity":[
-                                 0
-                              ]
-                           },
-                           {
-                              "feature":0
-                           }
-                        ]
+                     "actor": "EnergyGuard",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "limitationOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         1
+                       ]
                      },
-                     {
-                        "msgCounter":278561
+                     "actor": "MonitoringAppliance",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "monitoringOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4,
+                           5
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "evStateOfCharge",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4
+                         ],
+                         "useCaseDocumentSubRevision": "RC2"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         4
+                       ]
                      },
-                     {
-                        "msgCounterReference":4
+                     "actor": "EnergyGuard",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "limitationOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "limitationOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         4
+                       ]
                      },
-                     {
-                        "cmdClassifier":"reply"
-                     }
-                  ]
-               },
-               {
-                  "payload":[
-                     {
-                        "cmd":[
-                           [
-                              {
-                                 "nodeManagementUseCaseData":[
-                                    {
-                                       "useCaseInformation":[
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         1
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"CEM"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"evseCommissioningAndConfiguration"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.1"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"evChargingSummary"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.1"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"evCommissioningAndConfiguration"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.1"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4,
-                                                            5,
-                                                            6,
-                                                            7,
-                                                            8
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"measurementOfElectricityDuringEvCharging"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.1"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"overloadProtectionByEvChargingCurrentCurtailment"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.1"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"optimizationOfSelfConsumptionDuringEvCharging"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.1"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"coordinatedEvCharging"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.1"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4,
-                                                            5,
-                                                            6,
-                                                            7,
-                                                            8
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         1
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"EnergyGuard"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"limitationOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         1
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"MonitoringAppliance"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"monitoringOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4,
-                                                            5
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"evStateOfCharge"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"RC2"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         4
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"EnergyGuard"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"limitationOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"limitationOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         4
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"MonitoringAppliance"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"monitoringOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4,
-                                                            5
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         5
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"ControllableSystem"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"limitationOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         6
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"GridConnectionPoint"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"monitoringOfGridConnectionPoint"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4,
-                                                            5,
-                                                            6,
-                                                            7
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         7
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"MonitoredUnit"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"monitoringOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4,
-                                                            5
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         2
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"EnergyGuard"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"limitationOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         2
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"MonitoringAppliance"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"monitoringOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4,
-                                                            5
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         3
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"EnergyGuard"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"limitationOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"limitationOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ],
-                                          [
-                                             {
-                                                "address":[
-                                                   {
-                                                      "device":"d:_i:xxxxxxxx_Kostal-KSEM"
-                                                   },
-                                                   {
-                                                      "entity":[
-                                                         3
-                                                      ]
-                                                   }
-                                                ]
-                                             },
-                                             {
-                                                "actor":"MonitoringAppliance"
-                                             },
-                                             {
-                                                "useCaseSupport":[
-                                                   [
-                                                      {
-                                                         "useCaseName":"monitoringOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4,
-                                                            5
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"monitoringOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4,
-                                                            5
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ],
-                                                   [
-                                                      {
-                                                         "useCaseName":"monitoringOfPowerConsumption"
-                                                      },
-                                                      {
-                                                         "useCaseVersion":"1.0.0"
-                                                      },
-                                                      {
-                                                         "useCaseAvailable":true
-                                                      },
-                                                      {
-                                                         "scenarioSupport":[
-                                                            1,
-                                                            2,
-                                                            3,
-                                                            4,
-                                                            5
-                                                         ]
-                                                      },
-                                                      {
-                                                         "useCaseDocumentSubRevision":"release"
-                                                      }
-                                                   ]
-                                                ]
-                                             }
-                                          ]
-                                       ]
-                                    }
-                                 ]
-                              }
-                           ]
-                        ]
-                     }
-                  ]
+                     "actor": "MonitoringAppliance",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "monitoringOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4,
+                           5
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         5
+                       ]
+                     },
+                     "actor": "ControllableSystem",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "limitationOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         6
+                       ]
+                     },
+                     "actor": "GridConnectionPoint",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "monitoringOfGridConnectionPoint",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4,
+                           5,
+                           6,
+                           7
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         7
+                       ]
+                     },
+                     "actor": "MonitoredUnit",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "monitoringOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4,
+                           5
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         2
+                       ]
+                     },
+                     "actor": "EnergyGuard",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "limitationOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         2
+                       ]
+                     },
+                     "actor": "MonitoringAppliance",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "monitoringOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4,
+                           5
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         3
+                       ]
+                     },
+                     "actor": "EnergyGuard",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "limitationOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "limitationOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   },
+                   {
+                     "address": {
+                       "device": "d:_i:xxxxxxxx_Kostal-KSEM",
+                       "entity": [
+                         3
+                       ]
+                     },
+                     "actor": "MonitoringAppliance",
+                     "useCaseSupport": [
+                       {
+                         "useCaseName": "monitoringOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4,
+                           5
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "monitoringOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4,
+                           5
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       },
+                       {
+                         "useCaseName": "monitoringOfPowerConsumption",
+                         "useCaseVersion": "1.0.0",
+                         "useCaseAvailable": true,
+                         "scenarioSupport": [
+                           1,
+                           2,
+                           3,
+                           4,
+                           5
+                         ],
+                         "useCaseDocumentSubRevision": "release"
+                       }
+                     ]
+                   }
+                 ]
                }
-            ]
+             }
+           ]
          }
-      }
-   ]
-}
+       }
+     }
+   }
+ }
+ 

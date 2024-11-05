@@ -101,6 +101,14 @@
                 "$ref": "#/definitions/actor",
                 "description": "If the reported actor is invalid, this contains the actor it should have instead"
               },
+              "entityid": {
+                "type": "array",
+                "description": "The SPINE entity ID array this use case & actor is implemented in",
+                "items": {
+                  "type": "integer",
+                  "description": "The SPINE entity ID"
+                }
+              },
               "notes": {
                 "type": "string",
                 "description": "Additional notes, findings about the use case and its scenarios"
@@ -115,10 +123,22 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
+              "entityid": {
+                "type": "array",
+                "description": "The SPINE entity ID array these features are implemented in",
+                "items": {
+                  "type": "integer",
+                  "description": "The SPINE entity ID"
+                }
+              },
               "entitytype": {
                 "type": "string",                    
                 "description": "The SPINE entity type this feature is supported by",
-                "enum": ["CEM", "EVSE", "EV", "HeatPumpAppliance", "Generic"]
+                "enum": ["CEM", "EVSE", "EV", 
+                  "ElectricityStorageSystem", 
+                  "GridConnectionPointOfPremises", "BatterySystem",
+                  "ElectricityGenerationSystem", "PVSystem",
+                  "HeatPumpAppliance", "Generic"]
               },
               "role": {
                 "type": "string",

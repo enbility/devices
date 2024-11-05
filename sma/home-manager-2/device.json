@@ -1,26 +1,593 @@
 {
   "product": "SMA Sunny Home Manager 2.0",
-  "updated": "12.04.2023",
+  "updated": "26.10.2024",
   "files": {
-    "discovery": "discovery-data.json"
+    "discovery": "discovery-data.json",
+    "usecase": "usecase-data.json"
   },
   "versions": {
-    "firmware": "2.11.5.R",
+    "firmware": "2.15.6.R",
     "ship": "1.0",
-    "spine": "1.1.1"
+    "spine": "1.3.0"
   },
-  "devicetype": "Not provided",
+  "devicetype": "Generic",
   "iscem": true,
+  "usecases": [
+    {
+      "name": "limitationOfPowerProduction",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "EnergyGuard",
+      "entityid": [
+        1
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (1, 2, 4). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "monitoringOfPowerConsumption",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        }
+      ],
+      "actor": "MonitoringAppliance",
+      "entityid": [
+        1
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (1, 2, 3, 4). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "limitationOfPowerConsumption",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "ControllableSystem",
+      "entityid": [
+        2
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (2, 8). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "limitationOfPowerProduction",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "ControllableSystem",
+      "entityid": [
+        2
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (2, 8). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "limitationOfPowerProduction",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "EnergyGuard",
+      "entityid": [
+        2
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (1, 2, 4). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "monitoringOfPowerConsumption",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        }
+      ],
+      "actor": "MonitoringAppliance",
+      "entityid": [
+        2
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (1, 2, 3, 4). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "optimizationOfSelfConsumptionByHeatPumpCompressorFlexibility",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
+      ],
+      "actor": "CEM",
+      "entityid": [
+        3
+      ]
+    },
+    {
+      "name": "monitoringOfPowerConsumption",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        }
+      ],
+      "actor": "MonitoringAppliance",
+      "entityid": [
+        3
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (1, 2, 3, 4). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "limitationOfPowerConsumption",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "EnergyGuard",
+      "entityid": [
+        4
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (1, 2, 4). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "monitoringOfPowerConsumption",
+      "version": "1.0.0 draft3",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5
+        }
+      ],
+      "actor": "MonitoringAppliance",
+      "entityid": [
+        4
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (1, 2, 3, 4). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "flexibleStartForWhiteGoods",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "CEM",
+      "entityid": [
+        5
+      ]
+    },
+    {
+      "name": "visualizationOfAggregatedBatteryData",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "BatterySystem",
+      "entityid": [
+        6
+      ],
+      "notes": "The entityid should be [6,1]. Also the energy charged value in Scenario 1 is always incorrectly reported as 0 Wh."
+    },
+    {
+      "name": "visualizationOfAggregatedPhotovoltaicData",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "actor": "PVSystem",
+      "entityid": [
+        7
+      ],
+      "notes": "The entityid should be [7,1]."
+    },
+    {
+      "name": "limitationOfPowerConsumption",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "ControllableSystem",
+      "entityid": [
+        8
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (2, 8). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "limitationOfPowerProduction",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "actor": "ControllableSystem",
+      "entityid": [
+        8
+      ],
+      "notes": "This use case with the same actor is announced multiple times in different entities (2, 8). The spec doesn't describe how this should be handled."
+    },
+    {
+      "name": "monitoringOfGridConnectionPoint",
+      "version": "1.0.0",
+      "scenarios": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        },
+        {
+          "id": 5,
+          "invalid": true
+        },
+        {
+          "id": 6,
+          "invalid": true
+        },
+        {
+          "id": 7
+        }
+      ],
+      "actor": "GridConnectionPoint",
+      "entityid": [
+        9
+      ],
+      "notes": "The momentary current (scenario 5) and the voltage phase (scenario 6) data is not provided, but reported as being supported."
+    }
+  ],
   "features": [
     {
-      "entitytype": "Generic",
+      "entityid": [
+        1
+      ],
+      "entitytype": "CEM",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceDiagnosis"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        1
+      ],
+      "entitytype": "CEM",
       "role": "client",
       "features": [
         {
           "type": "Generic"
         }
       ]
+    },
+    {
+      "entityid": [
+        2
+      ],
+      "entitytype": "CEM",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceDiagnosis"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        2
+      ],
+      "entitytype": "CEM",
+      "role": "client",
+      "features": [
+        {
+          "type": "Generic"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        3
+      ],
+      "entitytype": "CEM",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceDiagnosis"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        3
+      ],
+      "entitytype": "CEM",
+      "role": "client",
+      "features": [
+        {
+          "type": "Generic"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        4
+      ],
+      "entitytype": "CEM",
+      "role": "server",
+      "features": [
+        {
+          "type": "DeviceDiagnosis"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        4
+      ],
+      "entitytype": "CEM",
+      "role": "client",
+      "features": [
+        {
+          "type": "Generic"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        5
+      ],
+      "entitytype": "CEM",
+      "role": "client",
+      "features": [
+        {
+          "type": "Generic"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        6,
+        1
+      ],
+      "entitytype": "BatterySystem",
+      "role": "server",
+      "features": [
+        {
+          "type": "ElectricalConnection"
+        },
+        {
+          "type": "Measurement"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        7,
+        1
+      ],
+      "entitytype": "PVSystem",
+      "role": "server",
+      "features": [
+        {
+          "type": "ElectricalConnection"
+        },
+        {
+          "type": "Measurement"
+        },
+        {
+          "type": "DeviceConfiguration"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        8
+      ],
+      "entitytype": "CEM",
+      "role": "server",
+      "features": [
+        {
+          "type": "ElectricalConnection"
+        },
+        {
+          "type": "LoadControl"
+        },
+        {
+          "type": "DeviceConfiguration"
+        },
+        {
+          "type": "DeviceDiagnosis"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        8
+      ],
+      "entitytype": "CEM",
+      "role": "client",
+      "features": [
+        {
+          "type": "Generic"
+        }
+      ]
+    },
+    {
+      "entityid": [
+        9
+      ],
+      "entitytype": "GridConnectionPointOfPremises",
+      "role": "server",
+      "features": [
+        {
+          "type": "ElectricalConnection"
+        },
+        {
+          "type": "Measurement"
+        },
+        {
+          "type": "DeviceConfiguration"
+        }
+      ]
     }
-  ],
-  "notes": "This device only supports EEBUS use cases that are not open source and does not announce any of them."
+  ]
 }
