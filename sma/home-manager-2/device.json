@@ -405,7 +405,8 @@
         {
           "type": "DeviceDiagnosis"
         }
-      ]
+      ],
+      "notes": "The same server feature is available in 4 different entities. The spec doesn't describe how this should be handled."
     },
     {
       "entityid": [
@@ -429,7 +430,8 @@
         {
           "type": "DeviceDiagnosis"
         }
-      ]
+      ],
+      "notes": "The same server feature is available in 4 different entities. The spec doesn't describe how this should be handled."
     },
     {
       "entityid": [
@@ -453,7 +455,8 @@
         {
           "type": "DeviceDiagnosis"
         }
-      ]
+      ],
+      "notes": "The same server feature is available in 4 different entities. The spec doesn't describe how this should be handled."
     },
     {
       "entityid": [
@@ -477,7 +480,8 @@
         {
           "type": "DeviceDiagnosis"
         }
-      ]
+      ],
+      "notes": "The same server feature is available in 4 different entities. The spec doesn't describe how this should be handled."
     },
     {
       "entityid": [
