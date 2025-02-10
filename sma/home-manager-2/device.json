@@ -333,8 +333,7 @@
       "actor": "ControllableSystem",
       "entityid": [
         8
-      ],
-      "notes": "This use case with the same actor is announced multiple times in different entities (2, 8). The spec doesn't describe how this should be handled."
+      ]
     },
     {
       "name": "limitationOfPowerProduction",
@@ -356,8 +355,7 @@
       "actor": "ControllableSystem",
       "entityid": [
         8
-      ],
-      "notes": "This use case with the same actor is announced multiple times in different entities (2, 8). The spec doesn't describe how this should be handled."
+      ]
     },
     {
       "name": "monitoringOfGridConnectionPoint",
