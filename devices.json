@@ -6,5 +6,6 @@
   "sma/home-manager-2/device.json",
   "spelsberg/wallbox-smart-pro/device.json",
   "vaillant/arotherm-vwl-75:6a/device.json",
+  "vaillant/vr920/device.json",
   "viessmann/vitoconnect/device.json"
 ]
